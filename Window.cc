@@ -10,6 +10,18 @@
 using namespace std;
 
 
+WINDOW * windowForResize;
+
+class Window;
+
+// void handle_resize(int sig) {
+//     clear();
+//     int nh, nw;
+//     getmaxyx(window, nh, nw);
+//     resize(nw, nh);
+//     refresh();
+// }
+
 
 
 namespace view {
@@ -19,51 +31,18 @@ class Window {
     // size_t height;
     // size_t width;
 
-    WINDOW * win;
+    WINDOW * win;   
+
+    // Singleton instance
+    static unique_ptr<Window> instance;
 
     size_t scrollOffset = 0;
-
-
     
 
 public:
 
-    // static void handle_resize(int sig) {
-    //     endwin();
-    //     refresh();
-    //     clear();
-    //     int nh, nw;
-    //     getmaxyx(win, nh, nw);
-    //     win = newwin(nh, nw, 0, 0);
-    // }
 
     Window() {
-        // // initializes ncurses
-        // initscr();
-
-        // // disables character buffering
-        // cbreak();
-
-        // // disables echoing of characters
-        // noecho();
-
-        // keypad(stdscr, TRUE); // Enable special keys
-
-        // // signal(SIGWINCH, handle_resize);
-
-        // win = newwin(LINES, COLS, 0, 0);
-    }
-
-
-    
-    ~Window() {
-        delwin(win);
-        endwin();
-    }
-
-
-
-    void run(const vector<string> &wrappedContent) {
         // initializes ncurses
         initscr();
 
@@ -79,7 +58,40 @@ public:
 
         win = newwin(LINES, COLS, 0, 0);
 
-        
+        signal(SIGWINCH, handle_resize);
+    }
+
+
+    // Static signal handler for window resizing
+    static void handle_resize(int sig) {
+        if (instance) {
+            int newCOLS, newLINES;
+            getmaxyx(instance->win, newLINES, newCOLS);
+            instance->resize(newCOLS, newLINES); // Trigger the resize logic in the singleton instance
+        }
+    }
+
+    
+    ~Window() {
+        delwin(win);
+        endwin();
+    }
+
+
+
+    // Static method to access the singleton instance
+    static Window& getInstance() {
+        if (!instance) {
+            instance = make_unique<Window>();
+        }
+        return *instance;
+    }
+
+
+
+
+    void run(const vector<string> &wrappedContent) {
+
         display_file(wrappedContent);
 
         int ch;
@@ -108,17 +120,11 @@ public:
         wclear(win);
         // int row = 0;
 
-            
         size_t end = std::min(scrollOffset + LINES, wrappedLines.size());
         for (size_t i = scrollOffset; i < end; ++i) {
             mvprintw(i - scrollOffset, 0, wrappedLines[i].c_str());
         }
         wrefresh(win);
-
-
-      
-
-
 
         // for (const string &line : v) {
         //     mvwprintw(win, row++, 0, "%s", line.c_str());
@@ -155,7 +161,9 @@ public:
 
 
     void resize(size_t newCOLS, size_t newLINES) {
+        clear();
         wresize(win, newLINES, newCOLS);
+        refresh();
     }
 
     void refresh() {
@@ -163,14 +171,19 @@ public:
     }
 
 
+    void moveCursor()
 
-    
 
 
 
 
 
 };
+
+
+// Initialize the singleton instance to nullptr
+unique_ptr<Window> Window::instance = nullptr;
+
 
 
 }

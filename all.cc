@@ -6,9 +6,6 @@
 
 using namespace std;
 
-
-using namespace std;
-
 int main() {
     cout << "HELLO" << endl;
     string fileName = "test";
@@ -17,7 +14,4 @@ int main() {
     Document d(fileName);
 
     w.run(d.getWrappedLines(w.getCOLS()));
-
-    
-
 }

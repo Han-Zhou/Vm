@@ -19,7 +19,10 @@ exmain.o: exmain.cc
 ./model/Document.o: ./model/Document.cc
 	@${g++20} -c ./model/Document.cc
 
-main: exmain.o ./utils/FileReader.o ./utils/TextWrapper.o ./model/Document.o move
+window.o: window.cc
+	@${g++20} -c window.cc
+
+main: exmain.o ./utils/FileReader.o ./utils/TextWrapper.o ./model/Document.o window.o move
 	@${g++20} exmain.o ./utils/FileReader.o ./utils/TextWrapper.o ./model/Document.o -lncurses -o exec
 
 move:

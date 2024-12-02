@@ -7,6 +7,7 @@ using namespace std;
 namespace utils {
 
     vector<string> FileReader::read_file(const string &filename) {
+        cout << "Reading file: " << filename << endl;
         ifstream file(filename);
         vector<string> lines;
         string line;
@@ -14,6 +15,7 @@ namespace utils {
             cout << line << endl;
             lines.push_back(line);
         }
+        cout << "Done reading file" << endl;
         return lines;
     }
 }

@@ -1,3 +1,6 @@
+#ifndef DOCUMENT_H
+#define DOCUMENT_H
+
 #include <string>
 #include <vector>
 #include <memory>
@@ -7,41 +10,34 @@
 
 using namespace std;
 
+namespace model {
 
-class Document {
-    vector<string> lines;
-    vector<string> wrapped_lines;
-public:
+    class Document {
+        vector<string> lines;
+        vector<string> wrapped_lines;
+    public:
 
-    Document(const string &filename) {
-        // read the file
-        utils::FileReader fr;
-        lines = fr.read_file(filename);
-    }
+        Document(const string &filename);
 
-    Document(const Document &d) = delete;
-    Document(Document &&d) = delete;
-    Document &operator=(const Document &d) = delete;
-    Document &operator=(Document &&d) = delete;
-
-
-    void wrap(size_t width) {
-        wrapped_lines.clear();
         
-        utils::TextWrapper tw;
-        wrapped_lines = tw.wrapText(lines, width);
-    }
+        Document(Document &&d) = delete;
+        Document &operator=(const Document &d) = delete;
+        Document &operator=(Document &&d) = delete;
 
 
-    vector<string> getWrappedLines(size_t width) {
-        wrap(width);
-        return wrapped_lines;
-    }
+        void wrap(size_t width);
+        vector<string> getWrappedLines(size_t width);
+        vector<string> fetchWrappedLines() const;
+        size_t getLinesSize() const;
+        size_t getWrappedLinesSize() const;
 
 
 
 
 
 
-};
+    };
+}
 
+
+# endif

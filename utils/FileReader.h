@@ -1,3 +1,6 @@
+# ifndef FILE_READER_H
+# define FILE_READER_H
+
 #include<fstream>
 #include<string>
 #include<vector>
@@ -11,3 +14,5 @@ namespace utils {
         vector<string> read_file(const string &filename);
     };
 }
+
+# endif

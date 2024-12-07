@@ -4,7 +4,7 @@
 
 namespace view {
 
-    void Cursor::updateNewTriple(size_t newLines, size_t newCOLS) {
+    void Cursor::getNewTriple(size_t newLines, size_t newCOLS) {
         // line is still gonna be the same
         int newSublineSize = newCOLS - 1;
         int oldLineIndex = currentChar.subLine * (oldCOLS - 1) + currentChar.index;
@@ -26,24 +26,22 @@ namespace view {
 
     void Cursor::adjustCursor(size_t newLines, size_t newCOLS) {
         // we need to somehow translate the Cursor position to one that fits the new window dimensions
-        updateNewTriple(newLines, newCOLS);
+        getNewTriple(newLines, newCOLS);
 
-        int wrapped_line_index = 0;
-        for (int i = 0; i < currentChar.line; i++) {
-            wrapped_line_index += document.fetchWrappedLines()[i].size();
-        }
         // if the line the cursor is pointing to is not in the view, we need to adjust the scrollOffset
-        if (wrapped_line_index < scrollOffset) {
-            scrollOffset = wrapped_line_index;
+        if (currentChar.line < scrollOffset) {
+            scrollOffset = currentChar.line;
         }
-        else if (wrapped_line_index >= scrollOffset + newLines) {
-        scrollOffset = wrapped_line_index - newLines + 1;
+        else if (currentChar.line >= scrollOffset + newLines) {
+            scrollOffset = currentChar.line - newLines + 1;
+        }
+
+        // we need to adjust the position of the cursor in the window
+        posn.y = currentChar.line - scrollOffset;
+        posn.x = currentChar.index % newCOLS;
     }
 
-    // we need to adjust the posn of the cursor to match the currentChar
-        posn.y = wrapped_line_index - scrollOffset;
-        posn.x = currentChar.index;
-    }
+
 
 
 
@@ -136,15 +134,15 @@ namespace view {
             return;
         }
 
-        // log << "---------------------------------" << endl;
-        // log << "---moving down---" << endl;
-        // log << "---------------------------------" << endl;
-        // log << "currentChar.line: " << currentChar.line << endl;
-        // log << "currentChar.subLine: " << currentChar.subLine << endl;
-        // log << "currentChar.index: " << currentChar.index << endl;
-        // log << "actualX: " << actualX << endl;
-        // log << "posn.y: " << posn.y << endl;
-        // log << "posn.x: " << posn.x << endl;
+        log << "---------------------------------" << endl;
+        log << "---moving down---" << endl;
+        log << "---------------------------------" << endl;
+        log << "currentChar.line: " << currentChar.line << endl;
+        log << "currentChar.subLine: " << currentChar.subLine << endl;
+        log << "currentChar.index: " << currentChar.index << endl;
+        log << "actualX: " << actualX << endl;
+        log << "posn.y: " << posn.y << endl;
+        log << "posn.x: " << posn.x << endl;
 
 
 
@@ -182,7 +180,7 @@ namespace view {
             belowLineEnd += newLine[i].size();
         }
 
-        if (actualX > belowLineEnd) {
+        if (actualX> belowLineEnd) {
             // the line below the current cursor position is shorter than the current x position
             // so we move the cursor to the end of the line
             currentChar.subLine = newLine.size() - 1;

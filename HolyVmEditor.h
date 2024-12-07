@@ -27,7 +27,7 @@ class HolyVmEditor {
 public: 
 
     HolyVmEditor(const string &filename): 
-        document{make_unique<model::Document>(filename)}, cursor{make_unique<view::Cursor>(0, 0, *document)},
+        document{make_unique<model::Document>(filename)}, cursor{make_unique<view::Cursor>(0, 0, *document, 0)},
         window{view::Window::getInstance(*document, *cursor)} {
 
         cout << "Creating HolyVmEditor" << endl;

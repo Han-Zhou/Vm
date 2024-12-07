@@ -35,6 +35,7 @@ class Window {
     static unique_ptr<Window> instance;
 
     size_t scrollOffset = 0;
+    bool resized = false;
     
 
 public:
@@ -59,7 +60,7 @@ public:
 
     void init();
     void run();
-    void display_file(const vector<string> &wrappedLines);
+    void display_file(const vector<vector<string>> &wrappedLines);
     void display_cursor();
 
 

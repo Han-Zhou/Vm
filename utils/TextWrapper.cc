@@ -5,46 +5,30 @@ namespace utils {
     vector<vector<string>> TextWrapper::wrapText(const vector<string> text, size_t maxWidth) {
 
         ofstream log("log");
-        vector<string> wrappedLines;
+        vector<vector<string>> wrappedLines;
 
         for (const string &line : text) {
-            // log << "Line: " << line << endl;
+
+            // currentWrappedLine is line but wrapped
+            vector<string> currentWrappedLine;
+
             istringstream stream(line);
             stream >> std::noskipws;
-            // log << "stream: " << stream.str() << endl;
-            // string word;
             string currentLine;
-
-
-            // while (stream >> word) {
-            //     log << "Word: " << word << endl;
-            //     // If adding the next word exceeds the line width
-            //     if (currentLine.length() + word.length() + 1 > maxWidth) {
-            //         wrappedLines.push_back(currentLine); // Save the current line
-            //         log << "Wrapped Line: " << currentLine << endl;
-            //         currentLine = word; // Start a new line
-            //     } else {
-            //         // Add a space if the line isn't empty
-            //         // if (!currentLine.empty()) {
-            //         //     currentLine += " ";
-            //         // }
-            //         currentLine += word;
-            //     }
-            // }
 
             char ch;
             while (stream >> ch) {
                 if (ch == '\n') {
+                    // line is only a newline character, nothing more
                     if (currentLine.length() == 0) {
-                        wrappedLines.push_back("");
-                        continue;
+                        currentWrappedLine.push_back("");
+                        break;
                     }
-                    wrappedLines.push_back(currentLine);
-                    // log << "Wrapped Line: " << currentLine << endl;
+                    // else the line is over
+                    currentWrappedLine.push_back(currentLine);
                     currentLine = "";
                 } else if (currentLine.length() + 2 > maxWidth) {
-                    wrappedLines.push_back(currentLine);
-                    // log << "Wrapped Line: " << currentLine << endl;
+                    currentWrappedLine.push_back(currentLine);
                     currentLine = ch;
                 } else {
                     currentLine += ch;
@@ -53,15 +37,18 @@ namespace utils {
 
             // Add the last line if there's any remaining text
             if (currentLine.length() != 0) {
-                // log << "Wrapped Line: " << currentLine << endl; 
-                wrappedLines.push_back(currentLine);
+                currentWrappedLine.push_back(currentLine);
             }
+
+            wrappedLines.push_back(currentWrappedLine);
         }
 
-        log << "Wrapped Lines: " << endl;
-        for (string &s : wrappedLines) {
-            log << s << endl;
-        }
+        // for (int i = 0; i < wrappedLines.size(); ++i) {
+        //     for (int j = 0; j < wrappedLines[i].size(); ++j) {
+        //         log << wrappedLines[i][j] << endl;
+        //     }
+        // }
+
 
 
         return wrappedLines;

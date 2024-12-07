@@ -14,7 +14,11 @@ namespace model {
 
     class Document {
         vector<string> lines;
-        vector<string> wrapped_lines;
+        vector<vector<string>> wrapped_lines;
+
+        // determines the total number of wrapped lines in the document
+        size_t howManyWrappedLines = 0;
+
     public:
 
         Document(const string &filename);
@@ -26,8 +30,8 @@ namespace model {
 
 
         void wrap(size_t width);
-        vector<string> getWrappedLines(size_t width);
-        vector<string> fetchWrappedLines() const;
+        vector<vector<string>> &createWrappedLines(size_t width);
+        const vector<vector<string>> &fetchWrappedLines() const;
         size_t getLinesSize() const;
         size_t getWrappedLinesSize() const;
 

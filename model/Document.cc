@@ -18,15 +18,20 @@ namespace model {
             
             utils::TextWrapper tw;
             wrapped_lines = tw.wrapText(lines, width);
+            howManyWrappedLines = 0;
+
+            for (int i = 0; i < wrapped_lines.size(); ++i) {
+                howManyWrappedLines += wrapped_lines[i].size();
+            }
         }
 
 
-        vector<string> Document::getWrappedLines(size_t width) {
+        vector<vector<string>> &Document::createWrappedLines(size_t width) {
             wrap(width);
             return wrapped_lines;
         }
 
-        vector<string> Document::fetchWrappedLines() const {
+        const vector<vector<string>> &Document::fetchWrappedLines() const {
             return wrapped_lines;
         }
 
@@ -36,7 +41,7 @@ namespace model {
         }
 
         size_t Document::getWrappedLinesSize() const {
-            return wrapped_lines.size();
+            return howManyWrappedLines;
         }
 
 

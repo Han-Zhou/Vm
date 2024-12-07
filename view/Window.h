@@ -29,6 +29,7 @@ class Window {
     // Cursor * cursor;
     model::Document &document;
     Cursor &cursor;
+    string mode = "insert";
 
 
     // Singleton instance
@@ -62,7 +63,10 @@ public:
     void run();
     void display_file(const vector<vector<string>> &wrappedLines);
     void display_cursor();
+    void display_status_bar();
 
+
+    void changeMode(string newMode);
 
 
 

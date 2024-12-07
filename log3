@@ -9115,3 +9115,4359 @@ new currentChar.index: 0
 new actualX: 0
 new posn.y: 21
 new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 1
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 1
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 2
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 2
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 3
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 3
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 4
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 4
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 5
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 5
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 6
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 6
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 7
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 8
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 8
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 9
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 9
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 10
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 10
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 12
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 11
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 13
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 12
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 15
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 13
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 16
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 14
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 18
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 15
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 19
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 16
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 20
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 17
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 21
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 18
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 22
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 19
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 23
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 20
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 24
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 21
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 25
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 22
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 26
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 23
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 27
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 24
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 28
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 25
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 29
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 26
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 30
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 27
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 32
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 28
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 34
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 29
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 35
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 30
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 31
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 32
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 33
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 34
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 35
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 36
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 37
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 38
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 39
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 40
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 41
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 42
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 43
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 44
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 45
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 46
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 47
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 48
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 49
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 50
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 51
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 52
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 53
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 54
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 55
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 56
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 57
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 58
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 59
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 60
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 61
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 62
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 63
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 64
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 65
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 66
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 67
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 68
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 69
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 70
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 71
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 72
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 73
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 74
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 75
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 76
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 77
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 78
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 79
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 80
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 81
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 82
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 83
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 84
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 85
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 86
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 87
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 88
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 89
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 90
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 91
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 92
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 93
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 94
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 95
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 96
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 97
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 98
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 99
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 100
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 101
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 102
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 103
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 104
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 105
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 106
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 107
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 108
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 109
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 110
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 111
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 112
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 113
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 114
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 115
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 116
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 117
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 118
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 119
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 120
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 121
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 122
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 123
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 124
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 125
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 126
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 127
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 128
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 129
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 130
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 131
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 132
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 133
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 134
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 135
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 136
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 137
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 138
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 139
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 140
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 141
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 142
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 143
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 144
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 145
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 146
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 147
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 148
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 149
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 3
+-
+new currentChar.line: 150
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 35
+new posn.x: 0
+numberOfWrappedLinesBetween: 3
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 151
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 152
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 153
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 154
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 155
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 156
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 157
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 158
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 159
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 160
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 161
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 162
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 163
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 164
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 165
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 166
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 167
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 168
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 169
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 170
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 171
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 172
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 173
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 174
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 175
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 176
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 177
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 178
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 179
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 180
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 181
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 182
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 183
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 184
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 185
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 186
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 187
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 188
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 189
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 190
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 191
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 192
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 193
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 194
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 195
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 196
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 197
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 198
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 199
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 200
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 201
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 202
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 203
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 204
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 205
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 206
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 207
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 208
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 209
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 210
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 211
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 212
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 213
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 214
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 215
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 216
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 217
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 218
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 219
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 220
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 221
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 222
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 223
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 224
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 225
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 226
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 227
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 228
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 229
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 230
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 231
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 232
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 233
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 234
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 235
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 236
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 237
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 238
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 239
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 240
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 241
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 242
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 243
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 244
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 245
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 246
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 247
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 248
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 249
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 250
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 251
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 252
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 253
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 254
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 255
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 256
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 257
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 258
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 259
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 260
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 261
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 262
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 263
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 264
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 265
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 266
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 267
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 268
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 269
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 270
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 271
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 272
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 273
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 274
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 275
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 276
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 277
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 278
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 279
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 280
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 281
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 282
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 283
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 3
+-
+new currentChar.line: 284
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 35
+new posn.x: 0
+numberOfWrappedLinesBetween: 3
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 285
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 286
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 287
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 288
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 289
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 290
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 291
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 292
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 293
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 294
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 295
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 296
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 297
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 298
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 299
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 300
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 300
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 301
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 302
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 303
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 304
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 305
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 306
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 307
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 308
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 309
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 310
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 311
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 312
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 313
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 314
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 315
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 316
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 317
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 36
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 318
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 319
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 320
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 321
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 322
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 323
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 324
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 325
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 326
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 327
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 328
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 329
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 37
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 1
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 27
+new posn.y: 1
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 2
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 27
+new posn.y: 2
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 3
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 27
+new posn.y: 3
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 4
+new currentChar.subLine: 0
+new currentChar.index: 15
+new actualX: 27
+new posn.y: 4
+new posn.x: 15
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 5
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 27
+new posn.y: 5
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 6
+new currentChar.subLine: 0
+new currentChar.index: 27
+new actualX: 27
+new posn.y: 6
+new posn.x: 27
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 7
+new currentChar.subLine: 0
+new currentChar.index: 27
+new actualX: 27
+new posn.y: 8
+new posn.x: 27
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 8
+new currentChar.subLine: 0
+new currentChar.index: 27
+new actualX: 27
+new posn.y: 9
+new posn.x: 27
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 9
+new currentChar.subLine: 0
+new currentChar.index: 27
+new actualX: 27
+new posn.y: 10
+new posn.x: 27
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 10
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 27
+new posn.y: 12
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 11
+new currentChar.subLine: 0
+new currentChar.index: 27
+new actualX: 27
+new posn.y: 13
+new posn.x: 27
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 12
+new currentChar.subLine: 0
+new currentChar.index: 27
+new actualX: 27
+new posn.y: 15
+new posn.x: 27
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 13
+new currentChar.subLine: 0
+new currentChar.index: 27
+new actualX: 27
+new posn.y: 16
+new posn.x: 27
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 14
+new currentChar.subLine: 0
+new currentChar.index: 27
+new actualX: 27
+new posn.y: 18
+new posn.x: 27
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 15
+new currentChar.subLine: 0
+new currentChar.index: 27
+new actualX: 27
+new posn.y: 21
+new posn.x: 27
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 16
+new currentChar.subLine: 0
+new currentChar.index: 27
+new actualX: 27
+new posn.y: 22
+new posn.x: 27
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 17
+new currentChar.subLine: 0
+new currentChar.index: 21
+new actualX: 27
+new posn.y: 24
+new posn.x: 21
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 18
+new currentChar.subLine: 0
+new currentChar.index: 12
+new actualX: 27
+new posn.y: 25
+new posn.x: 12
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 1
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 1
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 2
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 2
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 3
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 3
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 4
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 4
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 5
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 5
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 6
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 6
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 7
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 7
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 8
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 8
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 9
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 9
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 10
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 10
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 11
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 11
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 12
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 12
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 13
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 13
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 14
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 14
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 15
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 15
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 16
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 16
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 17
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 18
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 19
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 20
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 21
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 22
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 23
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 24
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 25
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 26
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 27
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 28
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 29
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 30
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 31
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 32
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 33
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 34
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 35
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 36
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 37
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 38
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 39
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 40
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 41
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 42
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 43
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 1
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 1
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 2
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 2
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 3
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 3
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 4
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 4
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 5
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 5
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 6
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 6
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 7
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 7
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 8
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 8
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 9
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 9
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 10
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 11
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 11
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 12
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 12
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 14
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 13
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 15
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 14
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 15
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 18
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 16
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 19
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 17
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 20
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 18
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 21
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 19
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 22
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 20
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 23
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 21
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 24
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 22
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 25
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 23
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 26
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 24
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 27
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 25
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 28
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 26
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 28
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 27
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 27
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 28
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 28
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 29
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 28
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 30
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 28
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 31
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 28
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 32
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 28
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 33
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 28
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 34
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 27
+new posn.x: 0
+numberOfWrappedLinesBetween: 2
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 35
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 28
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 1
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 1
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 2
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 2
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 3
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 3
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 4
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 4
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 5
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 5
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 6
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 6
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 7
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 7
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 8
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 8
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 9
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 9
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 10
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 68
+new posn.y: 11
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 9
+new currentChar.subLine: 1
+new currentChar.index: 0
+new actualX: 68
+new posn.y: 10
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 10
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 68
+new posn.y: 11
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 11
+new currentChar.subLine: 1
+new currentChar.index: 0
+new actualX: 68
+new posn.y: 13
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 12
+new currentChar.subLine: 0
+new currentChar.index: 49
+new actualX: 68
+new posn.y: 14
+new posn.x: 49
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 2
+-
+new currentChar.line: 13
+new currentChar.subLine: 1
+new currentChar.index: 0
+new actualX: 68
+new posn.y: 16
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 14
+new currentChar.subLine: 0
+new currentChar.index: 47
+new actualX: 68
+new posn.y: 17
+new posn.x: 47
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 15
+new currentChar.subLine: 0
+new currentChar.index: 39
+new actualX: 68
+new posn.y: 18
+new posn.x: 39
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 16
+new currentChar.subLine: 0
+new currentChar.index: 48
+new actualX: 68
+new posn.y: 19
+new posn.x: 48
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 17
+new currentChar.subLine: 0
+new currentChar.index: 21
+new actualX: 68
+new posn.y: 20
+new posn.x: 21
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 1
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 1
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 2
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 2
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 1
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 1
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 2
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 2
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 3
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 3
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 4
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 4
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 5
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 5
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 6
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 6
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 7
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 7
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 8
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 8
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 9
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 9
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 10
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 10
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 11
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 11
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 12
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 12
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 13
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 13
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 14
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 14
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 15
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 15
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 16
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 16
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 17
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 18
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 19
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 20
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 21
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 22
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 23
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 24
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 25
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 26
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 27
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 28
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 29
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 30
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 31
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 32
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 33
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 34
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 35
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 36
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0
+numberOfWrappedLinesBetween: 1
+numberOfWrappedLinesBelow: 1
+-
+new currentChar.line: 37
+new currentChar.subLine: 0
+new currentChar.index: 0
+new actualX: 0
+new posn.y: 17
+new posn.x: 0

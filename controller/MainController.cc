@@ -21,7 +21,7 @@ namespace controller {
                 break;
             case KEY_DOWN_ARROW:
                 try {
-                    cursor.moveDown(window.getLINES(), window.getCOLS());
+                    cursor.moveDown(window.getLINES() - 1, window.getCOLS());
                 } catch (const exception &e) {
                     log << e.what() << endl;
                 }

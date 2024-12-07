@@ -1,4 +1,5 @@
 #include "Window.h"
+#include <cstring>
 
 
 
@@ -11,7 +12,7 @@ namespace view {
 
 
     Window::~Window() {
-        attroff(COLOR_PAIR(1));
+        // attroff(COLOR_PAIR(1));
         delwin(win);
         endwin();
         cout << "Window destroyed" << endl;
@@ -64,7 +65,7 @@ namespace view {
         
         signal(SIGWINCH, handle_resize);
 
-        attron(COLOR_PAIR(1));
+        // attron(COLOR_PAIR(1));
     }
 
 
@@ -112,25 +113,14 @@ namespace view {
 
         ofstream log("log2", ios_base::app);
         // log << "displaying file" << endl;
-        int end = std::min(scrollOffset + LINES, document.getWrappedLinesSize());
+        int end = std::min(scrollOffset + LINES - 1, document.getWrappedLinesSize());
         
         int currentLine = scrollOffset;
 
         for (int i = scrollOffset; i < end; ++i) {
             mvprintw(i - scrollOffset, 0, flatLines[i].c_str());
         }
-
-        
-
-
-        // for (int i = scrollOffset; i < end;) {
-        //     for (int j = 0; (j < wrappedLines[currentLine].size()) && (i < end); ++j, ++i) {
-        //         mvprintw(i - scrollOffset, 0, wrappedLines[currentLine][j].c_str());
-        //         // log << "i: " << i << "j: " << j << "|" << wrappedLines[currentLine][j] << endl;
-        //     }
-        //     currentLine++;
-        //     // mvprintw(i - scrollOffset, 0, wrappedLines[i].c_str());
-        // }
+        display_status_bar();
     }
 
 
@@ -138,31 +128,56 @@ namespace view {
     void Window::display_cursor() {
 
         ofstream log("log", ios_base::app);
-        log << "New y: " << cursor.getPosn().y << "; New x: " << cursor.getPosn().x << endl;
-        log << "COLS: " << COLS << "; LINES: " << LINES << endl;
 
         const Triple &currentChar = cursor.getCurrentChar();
-        log << "currentChar.line: " << currentChar.line << endl;
-        log << "currentChar.subLine: " << currentChar.subLine << endl;
-        log << "currentChar.index: " << currentChar.index << endl;
-        log << "actualX: " << cursor.getActualX() << endl;
-        log << "linesSize: " << document.getLinesSize() << endl;
-        log << "scrollOffset: " << cursor.getScrollOffset() << endl;
-
-        // mvprintw(22, 25, "New y: %d; New x: %d", cursor.getPosn().y, cursor.getPosn().x);
-        // mvprintw(23, 25, "COLS: %d; LINES: %d", COLS, LINES);
-
-        // const Triple &currentChar = cursor.getCurrentChar();
-        // mvprintw(24, 25, "currentChar.line: %d", currentChar.line);
-        // mvprintw(25, 25, "currentChar.subLine: %d", currentChar.subLine);
-        // mvprintw(26, 25, "currentChar.index: %d", currentChar.index);
-        // mvprintw(27, 25, "actualX: %d", cursor.getActualX());
-        // mvprintw(28, 25, "linesSize: %d", document.getLinesSize());
-        // mvprintw(29, 25, "scrollOffset: %d", cursor.getScrollOffset());    
         
         move(cursor.getPosn().y, cursor.getPosn().x);
-
     }
+
+
+
+
+
+    void Window::display_status_bar() {
+        int height = LINES;
+        int width = COLS;
+
+        // Prepare status messages
+        std::string leftStatus;
+        if (mode == "insert") {
+            leftStatus = "-- INSERT --";
+        } 
+
+        // Get cursor position (1-based for nicer display)
+        int row = cursor.getPosn().y + 1;
+        int col = cursor.getPosn().x + 1;
+        char rightStatus[20];
+        snprintf(rightStatus, sizeof(rightStatus), "Ln %d, Col %d", row, col);
+
+        attron(COLOR_PAIR(1) | A_BOLD);
+
+        // the status bar will be at height - 1
+        move(height - 1, 0);
+
+        // Clear the line
+        clrtoeol();
+
+        // Print the left status
+        mvprintw(height - 1, 0, "%s", leftStatus.c_str());
+
+        // Print the right status aligned to the right
+        // First determine where to start printing the right status
+        int rightStart = width - (int)strlen(rightStatus);
+
+        if (rightStart < (int)leftStatus.size() + 1) {
+            rightStart = (int)leftStatus.size() + 1;
+        }
+        
+        mvprintw(height - 1, rightStart, "%s", rightStatus);
+
+        attroff(COLOR_PAIR(1) | A_BOLD);
+    }
+
 
 
 
@@ -189,6 +204,11 @@ namespace view {
         clear();
         resized = true;
         run();
+    }
+
+
+    void Window::changeMode(string newMode) {
+        mode = newMode;
     }
 
 

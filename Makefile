@@ -1,7 +1,7 @@
 CXX = g++-14.2.0
 CXXFLAGS = -std=c++20 -fmodules-ts -Wall -g -lncurses
 EXEC = vm
-OBJECTS = utils/FileReader.o utils/TextWrapper.o model/Document.o view/Window.o view/Cursor.o controller/MainController.o HolyVmEditor.o exmain.o
+OBJECTS = utils/TextWrapper.o model/Document.o view/Window.o view/Cursor.o controller/MainController.o HolyVmEditor.o exmain.o
 DEPENDS = ${OBJECTS:.o=.d}
 
 ${EXEC}: ${OBJECTS}

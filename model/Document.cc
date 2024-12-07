@@ -4,11 +4,30 @@ using namespace std;
 
 namespace model {
 
+        void Document::read_file(const string &filename) {
+            cout << "Reading file: " << filename << endl;
+            ifstream file(filename);
+            file >> noskipws;
+            string line;
+            char ch;
+            while (file.get(ch)) {
+                // cout << line << endl;
+                if (ch == '\n') {
+                    line += ch;
+                    lines.push_back(line);
+                    // cout << "Line: " << line << endl;
+                    line = "";
+                }
+                else {
+                    line += ch;
+                }
+            }
+            // cout << "Done reading 31file" << endl;
+        }
+
 
         Document::Document(const string &filename) {
-            // read the file
-            utils::FileReader fr;
-            lines = fr.read_file(filename);
+            read_file(filename);
         }
 
       

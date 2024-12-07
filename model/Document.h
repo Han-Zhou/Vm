@@ -4,8 +4,8 @@
 #include <string>
 #include <vector>
 #include <memory>
+#include <fstream>
 
-#include "../utils/FileReader.h"
 #include "../utils/TextWrapper.h"
 
 using namespace std;
@@ -18,6 +18,9 @@ namespace model {
 
         // determines the total number of wrapped lines in the document
         size_t howManyWrappedLines = 0;
+
+        void read_file(const string &filename);
+
 
     public:
 

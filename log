@@ -1,8 +1,8 @@
-New y: 20; New x: 23
-COLS: 32; LINES: 38
-currentChar.line: 12
+New y: 13; New x: 0
+COLS: 216; LINES: 27
+currentChar.line: 13
 currentChar.subLine: 0
-currentChar.index: 23
-actualX: 23
+currentChar.index: 0
+actualX: 0
 linesSize: 330
 scrollOffset: 0

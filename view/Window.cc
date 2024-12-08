@@ -25,6 +25,9 @@ namespace view {
             endwin();
             refresh();
 
+            // Flush any pending input sequences that may have been partially read.
+            flushinp();
+
 
             // ofstream log("log3", ios_base::app);
             // log << "Resizing window" << endl;
@@ -73,19 +76,18 @@ namespace view {
 
     void Window::run() {
         // COLS = 8;
-
+        ofstream log("runlog", ios_base::app);
         const vector<vector<string>> &wrappedContent = document.createWrappedLines(COLS);
 
         if (resized) {
             resized = false;
-            cursor.adjustCursor(LINES, COLS);
+            cursor.adjustCursor(LINES - 1, COLS);
+            log << "After adjustCursor: " << cursor.getPosn().y << " " << cursor.getPosn().x << endl;
+            log  << cursor.getCurrentChar().line << " " << cursor.getCurrentChar().subLine << " " << cursor.getCurrentChar().index << endl;
         }
         clear();
         display_file(wrappedContent);
         display_cursor();
-
-        // mvprintw(20, 10, "COLS: %d; LINES: %d", COLS, LINES);
-        // mvprintw(21, 10, "MaxWrappedSublineSize: %d", document.fetchWrappedLines()[0][0].size());
 
         refresh(); 
     }
@@ -111,7 +113,7 @@ namespace view {
             }
         }
 
-        ofstream log("log2", ios_base::app);
+        // ofstream log("log2", ios_base::app);
         // log << "displaying file" << endl;
         int end = std::min(scrollOffset + LINES - 1, document.getWrappedLinesSize());
         
@@ -127,11 +129,12 @@ namespace view {
 
     void Window::display_cursor() {
 
-        ofstream log("log", ios_base::app);
+        ofstream log("displayCursor", ios_base::app);
 
         const Triple &currentChar = cursor.getCurrentChar();
         
         move(cursor.getPosn().y, cursor.getPosn().x);
+        log << "Cursor position: " << cursor.getPosn().y << " " << cursor.getPosn().x << endl;
     }
 
 
@@ -201,6 +204,7 @@ namespace view {
 
     void Window::resize(size_t newCOLS, size_t newLINES) {
         win = newwin(newLINES, newCOLS, 0, 0);
+        keypad(win, TRUE);
         clear();
         resized = true;
         run();

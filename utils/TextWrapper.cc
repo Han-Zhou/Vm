@@ -4,7 +4,7 @@ namespace utils {
 
     vector<vector<string>> TextWrapper::wrapText(const vector<string> text, size_t maxWidth) {
 
-        ofstream log("log");
+        // ofstream log("log");
         vector<vector<string>> wrappedLines;
 
         for (const string &line : text) {

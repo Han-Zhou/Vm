@@ -14,7 +14,8 @@ using namespace std;
 
 int main() {
     // cout << "HELLO" << endl;
-    string fileName = "view/Cursor.cc";
+    // string fileName = "view/Cursor.cc";
+    string fileName = "test";
     // model::Document d(fileName);
     // view::Window w = view::Window::getInstance(d);
     // cout << "main filename: " << fileName << endl;

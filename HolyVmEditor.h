@@ -32,8 +32,6 @@ public:
 
         cout << "Creating HolyVmEditor" << endl;
 
-
-        // view::Window windowInst = view::Window::getInstance(*document);
         controller = make_unique<controller::MainController>(*document, window, *cursor);
         cout << "HolyVmEditor created" << endl;
     }

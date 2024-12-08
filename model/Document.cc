@@ -46,6 +46,7 @@ namespace model {
 
 
         vector<vector<string>> &Document::createWrappedLines(size_t width) {
+            curWidth = width;
             wrap(width);
             return wrapped_lines;
         }
@@ -62,6 +63,27 @@ namespace model {
         size_t Document::getWrappedLinesSize() const {
             return howManyWrappedLines;
         }
+
+        void Document::updateTriple(const Triple &t) {
+            currentCursorChar.line = t.line;
+            currentCursorChar.subLine = t.subLine;
+            currentCursorChar.index = t.index;
+        }
+
+
+        void Document::updateWrappedLines() {
+            wrap(curWidth);
+        }
+
+
+
+
+
+
+
+
+
+
 
 
 }

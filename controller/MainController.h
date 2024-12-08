@@ -2,11 +2,19 @@
 #define MAINCONTROLLER_H
 
 #include <iostream>
+#include <memory>
 
 #include "../model/Document.h"
 #include "../view/Window.h"
 #include "../view/Cursor.h"
 
+#include "CursorMover.h"
+
+#include "../mode/Mode.h"
+#include "../mode/InsertMode.h"
+#include "../mode/NormalMode.h"
+
+#include "../structs/ReturnMessage.h"
 
 
 namespace controller {
@@ -16,9 +24,27 @@ namespace controller {
         view::Window &window;
         view::Cursor &cursor;
 
+        CursorMover cursorMover;
+
+        mode::Mode *currentMode;
+
+        unique_ptr<mode::InsertMode> insert_mode;
+        unique_ptr<mode::NormalMode> normal_mode;
+
+        vector<int> inputBuffer;
+
+        bool justResized = false;
+
+
 
     public:
-        MainController(model::Document &document, view::Window &window, view::Cursor &cursor): document{document}, window{window}, cursor{cursor} {};
+        MainController(model::Document &document, view::Window &window, view::Cursor &cursor): document{document}, window{window}, cursor{cursor}, cursorMover{cursor, window} {
+
+            insert_mode = make_unique<mode::InsertMode>(document, cursorMover);
+            normal_mode = make_unique<mode::NormalMode>(document, cursorMover);
+
+            currentMode = insert_mode.get();
+        }
 
         MainController(const MainController &m) = delete;
         MainController(MainController &&m) = delete;
@@ -26,7 +52,7 @@ namespace controller {
         MainController &operator=(MainController &&m) = delete;
 
 
-        string processInput();
+        ReturnMessage processInput();
 
 
 
@@ -65,6 +91,4 @@ namespace controller {
 
 
 #endif
-
-
 

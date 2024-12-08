@@ -12,8 +12,8 @@ void HolyVmEditor::run() {
     mvprintw(0, 0, "window initialized");
     window.run();
     while (true) {
-        string returnStatus = controller->processInput();
-        if (returnStatus == "quit") {
+        ReturnMessage returnStatus = controller->processInput();
+        if (returnStatus == ReturnMessage::QUIT) {
             break;
         }
         window.run();

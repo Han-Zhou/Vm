@@ -7,8 +7,14 @@
 #include <fstream>
 
 #include "../utils/TextWrapper.h"
+#include "../structs/Triple.h"
+#include "../structs/Keys.h"
 
 using namespace std;
+
+namespace mode {
+    class InsertMode;
+}
 
 namespace model {
 
@@ -16,13 +22,21 @@ namespace model {
         vector<string> lines;
         vector<vector<string>> wrapped_lines;
 
+        // exactly the same as the triple in Cursor
+        Triple currentCursorChar = {0, 0, 0};
+
+
         // determines the total number of wrapped lines in the document
         size_t howManyWrappedLines = 0;
 
         void read_file(const string &filename);
 
+        size_t curWidth = 1;
+
 
     public:
+
+    friend class mode::InsertMode;
 
         Document(const string &filename);
 
@@ -37,6 +51,18 @@ namespace model {
         const vector<vector<string>> &fetchWrappedLines() const;
         size_t getLinesSize() const;
         size_t getWrappedLinesSize() const;
+
+
+        void updateTriple(const Triple &t);
+
+
+        void insertChar(int ch);
+        void deleteChar();
+
+
+        // changes lines according to wrapped lines
+        void updateWrappedLines();
+
 
 
 

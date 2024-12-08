@@ -15,6 +15,10 @@
 using namespace std;
 
 
+namespace controller {
+    class CursorMover;
+}
+
 
 namespace view {
 
@@ -36,11 +40,18 @@ namespace view {
         // for example, if the current cursor position is pointing to the character wrappedLines[0][1][2], then currentChar = {0, 1, 2}
         Triple currentChar = {0, 0, 0};
 
+        // while in insert mode, the cursor can sometimes even point to a block with no character. This bool determines if that is the case
+        bool insertModeHover = false;
+
         void updateNewTriple(size_t newLINES, size_t newCOLS);
+        void moveCursor(size_t LINES);
+        void updateNewTriple(const Triple &t);
  
 
 
     public:
+
+        friend class controller::CursorMover;
 
         Cursor(int x, int y, model::Document &document, int COLS) : posn{x, y}, document{document}, oldCOLS{COLS} {
             cout << "Cursor created" << endl;
@@ -58,8 +69,9 @@ namespace view {
         void moveDown(size_t windowLINES, size_t windowCOLS);
         void moveLeft(size_t windowCOLS);
         void moveRight(size_t windowCOLS);
+        void moveRightInsertMode(size_t windowCOLS);
+        void moveToFrontOfLine(size_t windowLINES);
 
-        void moveCursor(int x, int y);
 
 
         Posn getPosn() const;
@@ -70,6 +82,7 @@ namespace view {
         int getActualX() const { return actualX; }
 
         void updateCOLS(int newCOLS) { oldCOLS = newCOLS; }
+        void updateDocumentTriple();
 
 
 

@@ -4,8 +4,24 @@
 
 namespace view {
 
+
+    void Cursor::updateNewTriple(const Triple &t) {
+        currentChar.line = t.line;
+        currentChar.subLine = t.subLine;
+        currentChar.index = t.index;
+        updateDocumentTriple();
+    }
+
+
+
     void Cursor::updateNewTriple(size_t newLines, size_t newCOLS) {
         // line is still gonna be the same
+        if (insertModeHover) {
+            // we are in insert mode and the cursor is pointing to a block with no character
+            // we need to adjust the cursor to still
+            moveLeft(oldCOLS);
+        }
+
         int newSublineSize = newCOLS - 1;
         int oldLineIndex = currentChar.subLine * (oldCOLS - 1) + currentChar.index;
 
@@ -28,6 +44,17 @@ namespace view {
         // we need to somehow translate the Cursor position to one that fits the new window dimensions
         updateNewTriple(newLines, newCOLS);
 
+        // ofstream log("adjustCursor", ios_base::app);
+        oldCOLS = newCOLS;
+
+        moveCursor(newLines);
+        updateDocumentTriple();
+        oldCOLS = newCOLS;
+        // log << "posn.y: " << posn.y << " " << "posn.x: " << posn.x << endl;
+    }
+
+
+    void Cursor::moveCursor(size_t LINES) {
         int wrapped_line_index = 0;
         for (int i = 0; i < currentChar.line; i++) {
             wrapped_line_index += document.fetchWrappedLines()[i].size();
@@ -36,12 +63,12 @@ namespace view {
         if (wrapped_line_index < scrollOffset) {
             scrollOffset = wrapped_line_index;
         }
-        else if (wrapped_line_index >= scrollOffset + newLines) {
-        scrollOffset = wrapped_line_index - newLines + 1;
-    }
+        else if (wrapped_line_index >= scrollOffset + LINES) {
+            scrollOffset = wrapped_line_index - LINES + 1;
+        }
 
-    // we need to adjust the posn of the cursor to match the currentChar
-        posn.y = wrapped_line_index - scrollOffset;
+        // we need to adjust the posn of the cursor to match the currentChar
+        posn.y = wrapped_line_index - scrollOffset + currentChar.subLine;
         posn.x = currentChar.index;
     }
 
@@ -67,6 +94,9 @@ namespace view {
     void Cursor::moveUp(size_t windowCOLS) {
         // mvprintw(10, 45, "Up received");
         // mvprintw(11, 45, "Prev y: %d; Prev x: %d", posn.y, posn.x);
+        if (insertModeHover) {
+            moveLeft(windowCOLS);
+        }
 
         if (currentChar.line == 0) {
             // we are at the beginning of the file
@@ -118,6 +148,7 @@ namespace view {
         currentChar.index = posn.x;
 
         // mvprintw(12, 45, "New y: %d; New x: %d", posn.y, posn.x);
+        updateDocumentTriple();
     }
 
 
@@ -125,37 +156,26 @@ namespace view {
 
 
     void Cursor::moveDown(size_t windowLINES, size_t windowCOLS) {
-        // mvprintw(10, 45, "Down received");
-        // mvprintw(11, 45, "Prev y: %d; Prev x: %d", posn.y, posn.x);
-        // we haven't reached the end of the file yet
 
-        ofstream log("log3", ios_base::app);
+        if (insertModeHover) {
+            moveLeft(windowCOLS);
+        }
+
+        // ofstream log("log3", ios_base::app);
 
         if (currentChar.line == document.getLinesSize() - 1) {
             // we are at the end of the file
             return;
         }
 
-        // log << "---------------------------------" << endl;
-        // log << "---moving down---" << endl;
-        // log << "---------------------------------" << endl;
-        // log << "currentChar.line: " << currentChar.line << endl;
-        // log << "currentChar.subLine: " << currentChar.subLine << endl;
-        // log << "currentChar.index: " << currentChar.index << endl;
-        // log << "actualX: " << actualX << endl;
-        // log << "posn.y: " << posn.y << endl;
-        // log << "posn.x: " << posn.x << endl;
-
-
-
         // calculates how many wrapped lines (that we need to skip) are between the current cursor position and the line below
         int numberOfWrappedLinesBetween = document.fetchWrappedLines()[currentChar.line].size() - currentChar.subLine;
 
-        log << "numberOfWrappedLinesBetween: " << numberOfWrappedLinesBetween << endl;
+        // log << "numberOfWrappedLinesBetween: " << numberOfWrappedLinesBetween << endl;
 
         int numberOfWrappedLinesBelow = document.fetchWrappedLines()[currentChar.line + 1].size();
 
-        log << "numberOfWrappedLinesBelow: " << numberOfWrappedLinesBelow << endl;
+        // log << "numberOfWrappedLinesBelow: " << numberOfWrappedLinesBelow << endl;
 
         currentChar.line++;
 
@@ -199,17 +219,7 @@ namespace view {
         }
 
         currentChar.index = posn.x;
-
-        log << "-" << endl;
-        log << "new currentChar.line: " << currentChar.line << endl;
-        log << "new currentChar.subLine: " << currentChar.subLine << endl;
-        log << "new currentChar.index: " << currentChar.index << endl;
-        log << "new actualX: " << actualX << endl;
-        log << "new posn.y: " << posn.y << endl;
-        log << "new posn.x: " << posn.x << endl;
-
-
-        // mvprintw(12, 45, "New y: %d; New x: %d", posn.y, posn.x);
+        updateDocumentTriple();
     }
 
 
@@ -219,8 +229,7 @@ namespace view {
 
 
     void Cursor::moveLeft(size_t windowCOLS) {
-        // mvprintw(10, 45, "Left received");
-        // mvprintw(11, 45, "Prev y: %d; Prev x: %d", posn.y, posn.x);
+        insertModeHover = false;
 
         if (posn.x > 0) {
             posn.x--;
@@ -235,7 +244,7 @@ namespace view {
                 // we need to move to the end of the line above 
                 posn.y--;
                 currentChar.subLine--;
-                posn.x = windowCOLS - 1;
+                posn.x = windowCOLS - 2;
                 currentChar.index = posn.x;
             }
             else {
@@ -247,7 +256,8 @@ namespace view {
         actualX = currentChar.subLine * windowCOLS + currentChar.index;
 
 
-        mvprintw(12, 45, "New y: %d; New x: %d", posn.y, posn.x);
+        // mvprintw(12, 45, "New y: %d; New x: %d", posn.y, posn.x);
+        updateDocumentTriple();
     }
 
 
@@ -257,13 +267,11 @@ namespace view {
 
 
     void Cursor::moveRight(size_t windowCOLS) {
-        // mvprintw(10, 45, "Right received");
-        // mvprintw(11, 45, "Prev y: %d; Prev x: %d", posn.y, posn.x);
 
         // the length of the current line
         size_t curLineLength = document.fetchWrappedLines()[currentChar.line][currentChar.subLine].size();
 
-        ofstream log("log3", ios_base::app);
+        // ofstream log("log3", ios_base::app);
 
         if (posn.x < windowCOLS - 2) {
             if (curLineLength != 0) {
@@ -278,12 +286,6 @@ namespace view {
             // the cursor is at the end of the line
             // we need to decide if moveRight would move it the the leftmost position of the line below
             // i.e. the line below and the current line belongs the the same line in the document, just wrapped
-            // log << "Moving right at end of line" << endl;
-            // log << "currentChar.line: " << currentChar.line << endl;
-            // log << "currentChar.subLine: " << currentChar.subLine << endl;
-            // log << "currentChar.index: " << currentChar.index << endl;
-            // log << "document.fetchWrappedLines()[currentChar.line].size(): " << document.fetchWrappedLines()[currentChar.line].size() << endl;
-            // log << "_____________________________________________________" << endl;
             if (currentChar.subLine < document.fetchWrappedLines()[currentChar.line].size() - 1) {
                 // we are not at the last subLine of the current line
                 // we need to move to the start of the line below
@@ -300,9 +302,78 @@ namespace view {
 
          // we have to update actualX
         actualX = currentChar.subLine * windowCOLS + currentChar.index;
-
-        // mvprintw(12, 45, "New y: %d; New x: %d", posn.y, posn.x);
+        updateDocumentTriple();
     }
+
+
+
+
+
+
+    // allows the cursor to move one block to the right even if there is no character to the right
+    // used only in insert mode when the cursor can go one extra block to the right
+    void Cursor::moveRightInsertMode(size_t windowCOLS) {
+
+        if (currentChar.index != document.fetchWrappedLines()[currentChar.line][currentChar.subLine].size()) {
+            insertModeHover = false;
+        }
+        else {
+            return;
+        }
+
+
+        // the length of the current line
+        // ofstream log("moveRightInsertMode", ios_base::app);
+        size_t curLineLength = document.fetchWrappedLines()[currentChar.line][currentChar.subLine].size();
+
+        if (posn.x < windowCOLS - 2) {
+            if (curLineLength != 0) {
+                // we are allowed to move to maximum one block to the right of end character
+                if (posn.x < curLineLength) {
+                    posn.x++;
+                    currentChar.index++;
+                    if (currentChar.index == curLineLength) {
+                        insertModeHover = true;
+                    }
+                }
+            }
+        }
+        else {
+            if (currentChar.subLine == document.fetchWrappedLines()[currentChar.line].size() - 1) {
+                // the cursor is at the end of the line
+                // we can move it one block to the right, which is the first block down.
+                posn.y++;
+                currentChar.subLine++;
+                posn.x = 0;
+                currentChar.index = posn.x;
+                insertModeHover = true;
+            }
+            else {
+                // we are not at the last subLine of the current line
+                // we need to move to the start of the line below
+                posn.y++;
+                currentChar.subLine++;
+                posn.x = 0;
+                currentChar.index = posn.x;
+            }
+        }
+
+        actualX = currentChar.subLine * windowCOLS + currentChar.index;
+        updateDocumentTriple();
+    }
+
+
+
+
+
+    void Cursor::moveToFrontOfLine(size_t windowLINES) {
+        currentChar.subLine = 0;
+        currentChar.index = 0;
+        updateDocumentTriple();
+        moveCursor(windowLINES);
+    }
+
+
 
 
 
@@ -319,6 +390,10 @@ namespace view {
         return scrollOffset;
     }
 
+
+    void Cursor::updateDocumentTriple() {
+        document.updateTriple(currentChar);
+    }
 
 
 

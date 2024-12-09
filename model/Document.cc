@@ -70,9 +70,61 @@ namespace model {
             currentCursorChar.index = t.index;
         }
 
+        const Triple &Document::getTriple() const {
+            return currentCursorChar;
+        }
+
 
         void Document::updateWrappedLines() {
             wrap(curWidth);
+        }
+
+
+        void Document::addLineBelow() {
+            int currentLine = currentCursorChar.line;
+            string newLine = "\n";
+            lines.insert(lines.begin() + currentLine + 1, newLine);
+            updateWrappedLines();
+        }
+
+        
+        void Document::addLineAbove() {
+            int currentLine = currentCursorChar.line;
+            string newLine = "\n";
+            lines.insert(lines.begin() + currentLine, newLine);
+            currentCursorChar.line++;
+            updateWrappedLines();
+        }
+
+
+        void Document::moveToFrontOfLine() {
+            currentCursorChar.subLine = 0;
+            currentCursorChar.index = 0;
+        }
+
+
+        void Document::moveToFirstCharOfLine() {
+            int firstCharIndex = 0;
+            for (int i = 0; i < lines[currentCursorChar.line].size(); ++i) {
+                if (lines[currentCursorChar.line][i] != ' ') {
+                    firstCharIndex = i;
+                    break;
+                }
+                // if the line is only spaces, then we move to the end of the line
+                if (i == lines[currentCursorChar.line].size() - 1) {
+                    firstCharIndex = i;
+                }
+            }
+            currentCursorChar.subLine = firstCharIndex / curWidth;
+            currentCursorChar.index = firstCharIndex % curWidth;
+
+        }
+
+
+        void Document::moveToEndOfLine() {
+            int endIndex = lines[currentCursorChar.line].size() - 1;
+            currentCursorChar.subLine = endIndex / curWidth;
+            currentCursorChar.index = std::max(0, static_cast<int>(endIndex % curWidth - 1));
         }
 
 

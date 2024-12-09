@@ -34,6 +34,7 @@ namespace view {
 
         // the column size before resizing
         int oldCOLS;
+        int curLINES;
 
         // keeps track of where the cursor is pointing to in the vector<vector<string>> wrappedLines. Here y and x don't represent coordinates 
         // i.e. it determines which part of the document the cursor is pointing to.
@@ -44,8 +45,9 @@ namespace view {
         bool insertModeHover = false;
 
         void updateNewTriple(size_t newLINES, size_t newCOLS);
-        void moveCursor(size_t LINES);
         void updateNewTriple(const Triple &t);
+        void moveCursor(size_t LINES);
+        void moveCursor();
  
 
 
@@ -53,7 +55,7 @@ namespace view {
 
         friend class controller::CursorMover;
 
-        Cursor(int x, int y, model::Document &document, int COLS) : posn{x, y}, document{document}, oldCOLS{COLS} {
+        Cursor(int x, int y, model::Document &document, int COLS, int LINES) : posn{x, y}, document{document}, oldCOLS{COLS}, curLINES{LINES} {
             cout << "Cursor created" << endl;
         }
 
@@ -70,7 +72,6 @@ namespace view {
         void moveLeft(size_t windowCOLS);
         void moveRight(size_t windowCOLS);
         void moveRightInsertMode(size_t windowCOLS);
-        void moveToFrontOfLine(size_t windowLINES);
 
 
 
@@ -82,7 +83,10 @@ namespace view {
         int getActualX() const { return actualX; }
 
         void updateCOLS(int newCOLS) { oldCOLS = newCOLS; }
+        void updateLINES(int newLINES) { curLINES = newLINES; }
         void updateDocumentTriple();
+
+        bool isCursorHovering() const;
 
 
 

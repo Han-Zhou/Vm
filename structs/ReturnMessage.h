@@ -8,7 +8,7 @@ enum ReturnMessage {
     INSERT,
     NORMAL,
     QUIT,
-    CLEARBUFFER,
+    SUCCESS, // success means we have to clear the inputbuffer
     ERROR,
 };
 

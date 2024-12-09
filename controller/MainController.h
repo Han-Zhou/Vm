@@ -38,12 +38,13 @@ namespace controller {
 
 
     public:
-        MainController(model::Document &document, view::Window &window, view::Cursor &cursor): document{document}, window{window}, cursor{cursor}, cursorMover{cursor, window} {
+        MainController(model::Document &document, view::Window &window, view::Cursor &cursor): document{document}, window{window}, cursor{cursor}, cursorMover{document, cursor, window} {
 
             insert_mode = make_unique<mode::InsertMode>(document, cursorMover);
             normal_mode = make_unique<mode::NormalMode>(document, cursorMover);
 
-            currentMode = insert_mode.get();
+            // currentMode = insert_mode.get();
+            currentMode = normal_mode.get();
         }
 
         MainController(const MainController &m) = delete;

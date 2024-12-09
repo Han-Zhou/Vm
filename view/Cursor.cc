@@ -10,13 +10,14 @@ namespace view {
         currentChar.subLine = t.subLine;
         currentChar.index = t.index;
         updateDocumentTriple();
+        moveCursor();
     }
 
 
 
     void Cursor::updateNewTriple(size_t newLines, size_t newCOLS) {
         // line is still gonna be the same
-        if (insertModeHover) {
+        if (isCursorHovering()) {
             // we are in insert mode and the cursor is pointing to a block with no character
             // we need to adjust the cursor to still
             moveLeft(oldCOLS);
@@ -41,20 +42,22 @@ namespace view {
 
 
     void Cursor::adjustCursor(size_t newLines, size_t newCOLS) {
+        curLINES = newLines;
         // we need to somehow translate the Cursor position to one that fits the new window dimensions
         updateNewTriple(newLines, newCOLS);
 
         // ofstream log("adjustCursor", ios_base::app);
         oldCOLS = newCOLS;
+        
 
-        moveCursor(newLines);
+        moveCursor();
         updateDocumentTriple();
         oldCOLS = newCOLS;
         // log << "posn.y: " << posn.y << " " << "posn.x: " << posn.x << endl;
     }
 
 
-    void Cursor::moveCursor(size_t LINES) {
+    void Cursor::moveCursor() {
         int wrapped_line_index = 0;
         for (int i = 0; i < currentChar.line; i++) {
             wrapped_line_index += document.fetchWrappedLines()[i].size();
@@ -63,14 +66,15 @@ namespace view {
         if (wrapped_line_index < scrollOffset) {
             scrollOffset = wrapped_line_index;
         }
-        else if (wrapped_line_index >= scrollOffset + LINES) {
-            scrollOffset = wrapped_line_index - LINES + 1;
+        else if (wrapped_line_index >= scrollOffset + curLINES) {
+            scrollOffset = wrapped_line_index - curLINES + 1;
         }
 
         // we need to adjust the posn of the cursor to match the currentChar
         posn.y = wrapped_line_index - scrollOffset + currentChar.subLine;
         posn.x = currentChar.index;
     }
+
 
 
 
@@ -314,7 +318,7 @@ namespace view {
     // used only in insert mode when the cursor can go one extra block to the right
     void Cursor::moveRightInsertMode(size_t windowCOLS) {
 
-        if (currentChar.index != document.fetchWrappedLines()[currentChar.line][currentChar.subLine].size()) {
+        if (!isCursorHovering()) {
             insertModeHover = false;
         }
         else {
@@ -366,13 +370,6 @@ namespace view {
 
 
 
-    void Cursor::moveToFrontOfLine(size_t windowLINES) {
-        currentChar.subLine = 0;
-        currentChar.index = 0;
-        updateDocumentTriple();
-        moveCursor(windowLINES);
-    }
-
 
 
 
@@ -393,6 +390,12 @@ namespace view {
 
     void Cursor::updateDocumentTriple() {
         document.updateTriple(currentChar);
+    }
+
+
+    bool Cursor::isCursorHovering() const {
+        return (currentChar.subLine == document.fetchWrappedLines()[currentChar.line].size() ||
+        (currentChar.index == document.fetchWrappedLines()[currentChar.line][currentChar.subLine].size()));
     }
 
 

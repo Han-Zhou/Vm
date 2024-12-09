@@ -3,13 +3,31 @@
 
 
 
+#include "../structs/ReturnMessage.h"
 
-class Action {
-public:
-    virtual void execute() = 0;
-    virtual void undo() = 0;
-    virtual ~Command() = default;
+
+namespace action {
+
+    class Action {
+    public:
+
+        virtual ReturnMessage execute() = 0;
+        virtual ReturnMessage undo() = 0;
+        virtual ~Action() = default;
+    };
+
+
+
+
+
 }
+
+
+
+
+
+
+
 
 
 

@@ -5,6 +5,7 @@
 #include <vector>
 #include <memory>
 #include <fstream>
+#include <algorithm>
 
 #include "../utils/TextWrapper.h"
 #include "../structs/Triple.h"
@@ -54,6 +55,7 @@ namespace model {
 
 
         void updateTriple(const Triple &t);
+        const Triple &getTriple() const;
 
 
         void insertChar(int ch);
@@ -62,6 +64,15 @@ namespace model {
 
         // changes lines according to wrapped lines
         void updateWrappedLines();
+
+
+        // add a line below the current line
+        void addLineBelow();
+        void addLineAbove();
+
+        void moveToFrontOfLine();
+        void moveToFirstCharOfLine();
+        void moveToEndOfLine();
 
 
 

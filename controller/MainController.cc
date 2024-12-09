@@ -31,6 +31,7 @@ namespace controller {
             returnMessage = currentMode->processInput(inputBuffer);
             if (returnMessage == ReturnMessage::NORMAL) {
                 currentMode = normal_mode.get();
+                window.changeMode("normal");
             }
             inputBuffer.clear();
             return returnMessage;
@@ -39,11 +40,12 @@ namespace controller {
         // else mode is Normal Mode
         returnMessage = currentMode->processInput(inputBuffer);
         
-        if (returnMessage == ReturnMessage::CLEARBUFFER) {
+        if (returnMessage == ReturnMessage::SUCCESS) {
             inputBuffer.clear();
         }
         else if (returnMessage == ReturnMessage::INSERT) {
             currentMode = insert_mode.get();
+            window.changeMode("insert");
         }
         
         return returnMessage;        

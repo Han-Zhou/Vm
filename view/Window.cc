@@ -54,6 +54,7 @@ namespace view {
 
         start_color();
         init_pair(1, COLOR_YELLOW, COLOR_BLACK);
+        init_pair(2, COLOR_BLUE, COLOR_BLACK); 
 
         // disables character buffering
         cbreak();
@@ -65,6 +66,7 @@ namespace view {
 
         win = newwin(LINES, COLS, 0, 0);
         cursor.updateCOLS(COLS);
+        cursor.updateLINES(LINES - 1);
         
         signal(SIGWINCH, handle_resize);
 
@@ -76,14 +78,14 @@ namespace view {
 
     void Window::run() {
         // COLS = 8;
-        ofstream log("runlog", ios_base::app);
+        // ofstream log("runlog", ios_base::app);
         const vector<vector<string>> &wrappedContent = document.createWrappedLines(COLS);
 
         if (resized) {
             resized = false;
             cursor.adjustCursor(LINES - 1, COLS);
-            log << "After adjustCursor: " << cursor.getPosn().y << " " << cursor.getPosn().x << endl;
-            log  << cursor.getCurrentChar().line << " " << cursor.getCurrentChar().subLine << " " << cursor.getCurrentChar().index << endl;
+            // log << "After adjustCursor: " << cursor.getPosn().y << " " << cursor.getPosn().x << endl;
+            // log  << cursor.getCurrentChar().line << " " << cursor.getCurrentChar().subLine << " " << cursor.getCurrentChar().index << endl;
         }
         clear();
         display_file(wrappedContent);
@@ -122,6 +124,14 @@ namespace view {
         for (int i = scrollOffset; i < end; ++i) {
             mvprintw(i - scrollOffset, 0, flatLines[i].c_str());
         }
+
+        // Display blue wavy lines for the remainder of the screen
+        attron(COLOR_PAIR(2)); 
+        for (int i = end - scrollOffset; i < LINES - 1; ++i) {
+            mvprintw(i, 0, "~");
+        }
+        attroff(COLOR_PAIR(2));
+
         display_status_bar();
     }
 
@@ -129,12 +139,12 @@ namespace view {
 
     void Window::display_cursor() {
 
-        ofstream log("displayCursor", ios_base::app);
+        // ofstream log("displayCursor", ios_base::app);
 
         const Triple &currentChar = cursor.getCurrentChar();
         
         move(cursor.getPosn().y, cursor.getPosn().x);
-        log << "Cursor position: " << cursor.getPosn().y << " " << cursor.getPosn().x << endl;
+        // log << "Cursor position: " << cursor.getPosn().y << " " << cursor.getPosn().x << endl;
     }
 
 
@@ -150,6 +160,9 @@ namespace view {
         if (mode == "insert") {
             leftStatus = "-- INSERT --";
         } 
+        else {
+            leftStatus = "NORMAL";
+        }
 
         // Get cursor position (1-based for nicer display)
         int row = cursor.getPosn().y + 1;

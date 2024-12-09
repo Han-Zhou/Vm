@@ -5,25 +5,25 @@ namespace mode {
 
     ReturnMessage InsertMode::processInput(vector<int> input) {
         if (input.size() > 1) {
-            ofstream log("errorInsertMode", ios_base::app);
-            log << "Error: InsertMode::processInput: input size > 1" << endl;
-            for (int ch : input) {
-                log << ch;
-            }   
-            log << endl;
+            // ofstream log("errorInsertMode", ios_base::app);
+            // log << "Error: InsertMode::processInput: input size > 1" << endl;
+            // for (int ch : input) {
+            //     log << ch;
+            // }   
+            // log << endl;
             return ReturnMessage::ERROR;
         }
 
-        if (input[0] == KEY_UP) {
+        if (input[0] == KEY_UP_ARROW) {
             cursorMover.moveUp();
         }
-        else if (input[0] == KEY_DOWN) {
+        else if (input[0] == KEY_DOWN_ARROW) {
             cursorMover.moveDown();
         } 
-        else if (input[0] == KEY_LEFT) {
+        else if (input[0] == KEY_LEFT_ARROW) {
             cursorMover.moveLeft();
         } 
-        else if (input[0] == KEY_RIGHT) {
+        else if (input[0] == KEY_RIGHT_ARROW) {
             cursorMover.moveCursorRightInsertMode();
         }
         else if (input[0] == KEY_ESC) {
@@ -111,7 +111,7 @@ namespace mode {
             // the index of the char we are deleting in lines
             int deleteIndex = static_cast<int>(subLine * document.wrapped_lines[line][0].size() + index) - 1;
 
-            ofstream log("InsertMode", ios_base::app);
+            // ofstream log("InsertMode", ios_base::app);
 
             if (deleteIndex == -1) { // we are at the beginning of the line
                 if (line == 0) { // we are at the beginning of the file
@@ -129,11 +129,11 @@ namespace mode {
                     document.lines[currentLine].append(document.lines[line]);
                     document.lines.erase(document.lines.begin() + line);
 
-                    log << "----" << endl;
-                    log << "currentLine: " << currentLine << endl;
-                    log << "currentSubLine: " << currentSubLine << endl;
-                    log << "currentIndex: " << currentIndex << endl;
-                    log << "----" << endl;
+                    // log << "----" << endl;
+                    // log << "currentLine: " << currentLine << endl;
+                    // log << "currentSubLine: " << currentSubLine << endl;
+                    // log << "currentIndex: " << currentIndex << endl;
+                    // log << "----" << endl;
 
                     Triple t = {currentLine, currentSubLine, currentIndex};
                     cursorMover.updateCursorTriple(t);

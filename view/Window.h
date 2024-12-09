@@ -29,7 +29,7 @@ class Window {
     // Cursor * cursor;
     model::Document &document;
     Cursor &cursor;
-    string mode = "insert";
+    string mode = "normal";
 
 
     // Singleton instance

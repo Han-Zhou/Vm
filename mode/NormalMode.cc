@@ -35,70 +35,80 @@ namespace mode {
         }
 
 
-        if (input.size() == 1) {
 
-            if (input[0] == 'h') { // moves the cursor left
+        if (input.size() == 1) {
+            switch (input[0]) {
+            case 'h': { // moves the cursor left
                 auto action = action::ActionFactory::createMoveCursorAction(document, cursorMover, multiplier, ActionTypes::MOVE_LEFT);
                 return action->execute();
             }
-            else if (input[0] == 'j') { // moves the cursor down
+            case 'j': { // moves the cursor down
                 auto action = action::ActionFactory::createMoveCursorAction(document, cursorMover, multiplier, ActionTypes::MOVE_DOWN);
                 return action->execute();
             }
-            else if (input[0] == 'k') { // moves the cursor up
+            case 'k': { // moves the cursor up
                 auto action = action::ActionFactory::createMoveCursorAction(document, cursorMover, multiplier, ActionTypes::MOVE_UP);
                 return action->execute();
             }
-            else if (input[0] == 'l') { // moves the cursor to the right
+            case 'l': { // moves the cursor to the right
                 auto action = action::ActionFactory::createMoveCursorAction(document, cursorMover, multiplier, ActionTypes::MOVE_RIGHT);
                 return action->execute();
             }
-
-            if (input[0] == 'i') { // switch to insert mode
+            case 'i': { // switch to insert mode
                 auto action = action::ActionFactory::createChangeModeAction(document, cursorMover, ActionTypes::CHANGE_TO_INSERT_I);
                 return action->execute();
             }
-            else if (input[0] == 'a') {
+            case 'a': {
                 auto action = action::ActionFactory::createChangeModeAction(document, cursorMover, ActionTypes::CHANGE_TO_INSERT_A);
                 return action->execute();
             }
-            else if (input[0] == 'o') {
+            case 'o': {
                 auto action = action::ActionFactory::createChangeModeAction(document, cursorMover, ActionTypes::CHANGE_TO_INSERT_O);
                 return action->execute();
             }
-            else if (input[0] == 'I') {
+            case 'I': {
                 auto action = action::ActionFactory::createChangeModeAction(document, cursorMover, ActionTypes::CHANGE_TO_INSERT_BIG_I);
                 return action->execute();
             }
-            else if (input[0] == 'A') {
+            case 'A': {
                 auto action = action::ActionFactory::createChangeModeAction(document, cursorMover, ActionTypes::CHANGE_TO_INSERT_BIG_A);
                 return action->execute();
             }
-            else if (input[0] == 'O') {
+            case 'O': {
                 auto action = action::ActionFactory::createChangeModeAction(document, cursorMover, ActionTypes::CHANGE_TO_INSERT_BIG_O);
                 return action->execute();
             }
-            else if (input[0] == '$') {
+            case '$': {
                 auto action = action::ActionFactory::createMoveCursorAction(document, cursorMover, multiplier, ActionTypes::MOVE_LINE_$);
                 return action->execute();
             }
-            else if (input[0] == '^') {
+            case '^': {
                 auto action = action::ActionFactory::createMoveCursorAction(document, cursorMover, multiplier, ActionTypes::MOVE_LINE_caret);
                 return action->execute();
             }
 
 
-
-
+            case 'w': {
+                auto action = action::ActionFactory::createMoveCursorAction(document, cursorMover, multiplier, ActionTypes::MOVE_WORD_W);
+                return action->execute();
+            }
+            case 'b': {
+                auto action = action::ActionFactory::createMoveCursorAction(document, cursorMover, multiplier, ActionTypes::MOVE_WORD_B);
+                return action->execute();
+            }
+            case 'W': {
+                auto action = action::ActionFactory::createMoveCursorAction(document, cursorMover, multiplier, ActionTypes::MOVE_WORD_BIG_W);
+                return action->execute();
+            }
+            case 'B': {
+                auto action = action::ActionFactory::createMoveCursorAction(document, cursorMover, multiplier, ActionTypes::MOVE_WORD_BIG_B);
+                return action->execute();
+            }
+            default:
+                break;
+            }
             return ReturnMessage::SUCCESS;
         }
-
-
-
-
-
-
-        
 
 
 

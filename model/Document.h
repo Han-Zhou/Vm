@@ -34,6 +34,15 @@ namespace model {
 
         size_t curWidth = 1;
 
+        // set of functions that allows us to tell what kind of character the cursor is pointing to
+        bool isWhitespace(int ch);
+        bool isPunctuation(int ch);
+        bool isAlphabet(int ch);
+        bool atEndOfDocument(int &currentLine, int &currentCharIndex);
+        void moveForwardOneChar(int &currentLine, int &currentCharIndex);
+        bool atBeginOfDocument(int &currentLine, int &currentCharIndex);
+        void moveBackOneChar(int &currentLine, int &currentCharIndex);
+
 
     public:
 
@@ -73,6 +82,11 @@ namespace model {
         void moveToFrontOfLine();
         void moveToFirstCharOfLine();
         void moveToEndOfLine();
+
+        void moveToNextWord(); 
+        void moveToNextNonWhitespace();
+        void moveToPrevWord();
+        void moveToPrevNonWhitespace();
 
 
 

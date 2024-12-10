@@ -37,6 +37,16 @@ namespace controller {
         void moveToFirstCharOfLine();
         void moveToEndCharOfLine();
 
+
+        void moveToNextWord(int multiplier = 1);
+        void moveToNextNonWhitespace(int multiplier = 1);
+        void moveToPrevWord(int multiplier = 1);
+        void moveToPrevNonWhitespace(int multiplier = 1);
+
+
+
+
+
         void updateCursorTriple(const Triple &t);
 
     };

@@ -11,13 +11,15 @@ enum ActionTypes {
 
     // moves to words
     MOVE_WORD_W,
-    MOVE_WORD_E,
     MOVE_WORD_B,
+    MOVE_WORD_BIG_W,
+    MOVE_WORD_BIG_B,
 
     // moves regarding lines
     MOVE_LINE_0,
     MOVE_LINE_$,
     MOVE_LINE_caret, // ^
+
 
 
 

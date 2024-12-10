@@ -52,6 +52,43 @@ namespace controller {
 
 
 
+        void CursorMover::moveToNextWord(int multiplier) {
+            for (int i = 0; i < multiplier; i++) {
+                document.moveToNextWord();
+            }
+            cursor.updateNewTriple(document.getTriple());
+        }
+
+        void CursorMover::moveToNextNonWhitespace(int multiplier) {
+            for (int i = 0; i < multiplier; i++) {
+                document.moveToNextNonWhitespace();
+            }
+            cursor.updateNewTriple(document.getTriple());
+        }
+
+        void CursorMover::moveToPrevWord(int multiplier) {
+            for (int i = 0; i < multiplier; i++) {
+                document.moveToPrevWord();
+            }
+            cursor.updateNewTriple(document.getTriple());
+        }
+
+        void CursorMover::moveToPrevNonWhitespace(int multiplier) {
+            for (int i = 0; i < multiplier; i++) {
+                document.moveToPrevNonWhitespace();
+            }
+            cursor.updateNewTriple(document.getTriple());
+        }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -62,7 +99,6 @@ namespace controller {
     
         void CursorMover::updateCursorTriple(const Triple &t) {
             cursor.updateNewTriple(t);
-            // cursor.moveCursor();
         }
 
 

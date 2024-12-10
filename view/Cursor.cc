@@ -133,6 +133,8 @@ namespace view {
         for (int i = 0; i < newLine.size(); ++i) {
             aboveLineEnd += newLine[i].size();
         }
+
+        aboveLineEnd = max((int)aboveLineEnd - 1, 0);
         
         if (actualX > aboveLineEnd) {
             // the line above the current cursor position is shorter than the current x position
@@ -205,6 +207,8 @@ namespace view {
         for (int i = 0; i < newLine.size(); ++i) {
             belowLineEnd += newLine[i].size();
         }
+
+        belowLineEnd = max((int)belowLineEnd - 1, 0);
 
         if (actualX > belowLineEnd) {
             // the line below the current cursor position is shorter than the current x position

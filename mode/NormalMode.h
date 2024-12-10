@@ -28,6 +28,8 @@ namespace mode {
         bool isDigit(int ch);
         int extractDigit(int ch);
 
+        int extractMultiplier(vector<int> &input);
+
     public:
         NormalMode(model::Document &document, controller::CursorMover cm): document{document}, cursorMover{cm} {}
          ~NormalMode() = default;
@@ -36,7 +38,6 @@ namespace mode {
 
         ReturnMessage processInput(vector<int> input) override;
 
-        int extractMultiplier(vector<int> &input);
 
 
 

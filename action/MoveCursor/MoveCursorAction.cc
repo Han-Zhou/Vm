@@ -27,6 +27,19 @@ namespace action {
             case ActionTypes::MOVE_LINE_caret:
                 cursorMover.moveToFirstCharOfLine();
                 break;
+            
+            case ActionTypes::MOVE_WORD_W:
+                cursorMover.moveToNextWord(multiplier);
+                break;
+            case ActionTypes::MOVE_WORD_BIG_W:
+                cursorMover.moveToNextNonWhitespace(multiplier);
+                break;
+            case ActionTypes::MOVE_WORD_B:
+                cursorMover.moveToPrevWord(multiplier);
+                break;
+            case ActionTypes::MOVE_WORD_BIG_B:
+                cursorMover.moveToPrevNonWhitespace(multiplier);
+                break;
         }
         return ReturnMessage::SUCCESS;
     }

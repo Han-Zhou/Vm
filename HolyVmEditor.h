@@ -30,17 +30,17 @@ public:
         document{make_unique<model::Document>(filename)}, cursor{make_unique<view::Cursor>(0, 0, *document, 0, 0)},
         window{view::Window::getInstance(*document, *cursor)} {
 
-        cout << "Creating HolyVmEditor" << endl;
+        // cout << "Creating HolyVmEditor" << endl;
 
         controller = make_unique<controller::MainController>(*document, window, *cursor);
-        cout << "HolyVmEditor created" << endl;
+        // cout << "HolyVmEditor created" << endl;
     }
 
     void run();
 
     ~HolyVmEditor() {
         // unique_ptr will automatically delete the window
-        cout << "Destroying HolyVmEditor" << endl;
+        // cout << "Destroying HolyVmEditor" << endl;
     }
 
     HolyVmEditor(const HolyVmEditor &h) = delete;

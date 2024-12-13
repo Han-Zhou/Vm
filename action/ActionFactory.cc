@@ -27,6 +27,10 @@ namespace action {
         return make_unique<ChangeAction>(document, cursorMover, multiplier, actionType, yankRegister);
     }
 
+    unique_ptr<Action> ActionFactory::createColonAction(model::Document &document, controller::CursorMover &cursorMover, ActionTypes actionType, int lineNumber) {
+        return make_unique<ColonAction>(document, cursorMover, actionType, lineNumber);
+    }
+
 
 
 

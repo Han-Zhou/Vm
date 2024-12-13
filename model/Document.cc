@@ -5,7 +5,7 @@ using namespace std;
 namespace model {
 
         void Document::read_file(const string &filename) {
-            cout << "Reading file: " << filename << endl;
+            // cout << "Reading file: " << filename << endl;
             ifstream file(filename);
             file >> noskipws;
             string line;
@@ -15,6 +15,7 @@ namespace model {
                 if (ch == '\n') {
                     line += ch;
                     lines.push_back(line);
+                    originalLines.push_back(line);
                     // cout << "Line: " << line << endl;
                     line = "";
                 }
@@ -26,11 +27,16 @@ namespace model {
         }
 
 
-        Document::Document(const string &filename) {
-            read_file(filename);
-        }
 
-      
+        // Document::~Document() {
+        //     ofstream file(fileName);
+        //     file << noskipws;
+        //     for (const string &line : lines) {
+        //         file << line;
+        //     }
+        // }
+
+           
         const vector<string> &Document::getLines() const {
             return lines;
         }

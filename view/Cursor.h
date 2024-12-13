@@ -56,7 +56,7 @@ namespace view {
         friend class controller::CursorMover;
 
         Cursor(int x, int y, model::Document &document, int COLS, int LINES) : posn{x, y}, document{document}, oldCOLS{COLS}, curLINES{LINES} {
-            cout << "Cursor created" << endl;
+            // cout << "Cursor created" << endl;
         }
 
         Cursor(const Cursor &c) = delete;

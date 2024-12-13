@@ -3,6 +3,8 @@
 
 #include "NormalMode.h"
 
+#include <cmath>
+
 namespace mode {
 
     ReturnMessage NormalMode::processInput(vector<int> input) {
@@ -33,6 +35,9 @@ namespace mode {
 
         if (input.size() == 1) {
             switch (input[0]) {
+            case ':': {
+                return ReturnMessage::RUNNING;
+            }
             case Keys::KEY_LEFT_ARROW: 
             case 'h': { // moves the cursor left
                 auto action = action::ActionFactory::createMoveCursorAction(document, cursorMover, multiplier, ActionTypes::MOVE_LEFT);
@@ -314,10 +319,118 @@ namespace mode {
             return ReturnMessage::SUCCESS;
             }
 
-
-
+            case ':': {
+                return ReturnMessage::RUNNING;
+            }
             }
         }
+
+
+
+        if (input[0] == ':') {
+            if (input.size() == 3) {
+                if (input[input.size() - 1] == Keys::KEY_ENTER_override) {
+                    switch(input[1]) {
+                        case 'q': {
+                            auto action = action::ActionFactory::createColonAction(document, cursorMover, ActionTypes::COLON_Q);
+                            return action->execute();
+                        }
+                        case 'w': {
+                            auto action = action::ActionFactory::createColonAction(document, cursorMover, ActionTypes::COLON_W);
+                            return action->execute();
+                        }
+                        case '0': {
+                            auto action = action::ActionFactory::createColonAction(document, cursorMover, ActionTypes::COLON_0);
+                            return action->execute();
+                        }
+                        case '$': {
+                            auto action = action::ActionFactory::createColonAction(document, cursorMover, ActionTypes::COLON_$);
+                            return action->execute();
+                        }
+                        case '1': 
+                        case '2': 
+                        case '3': 
+                        case '4': 
+                        case '5': 
+                        case '6': 
+                        case '7': 
+                        case '8': 
+                        case '9': {
+                            auto action = action::ActionFactory::createColonAction(document, cursorMover, ActionTypes::COLON_LINE, input[1] - '0');
+                            return action->execute();
+                        }
+                        return ReturnMessage::SUCCESS;
+                    }
+                }
+                else{ // enter hasn't been pressed
+                    switch (input[1]) {
+                        case 'q': {
+                            return ReturnMessage::RUNNING;
+                        }
+                        case 'w': {
+                            return ReturnMessage::RUNNING;
+                        }
+                        case '1':
+                        case '2':
+                        case '3':
+                        case '4':
+                        case '5':
+                        case '6':
+                        case '7':
+                        case '8':
+                        case '9': {
+                            return ReturnMessage::RUNNING;
+                        }
+                    }
+                    return ReturnMessage::SUCCESS;
+                }
+            }
+        
+        
+            if (input.size() == 4) {
+                if (input[input.size() - 1] == Keys::KEY_ENTER_override) {
+                    if (input[1] == 'q') {
+                        if (input[2] == '!') {
+                            auto action = action::ActionFactory::createColonAction(document, cursorMover, ActionTypes::COLON_Q_EXCLAMATION);
+                            return action->execute();
+                        }
+                        return ReturnMessage::SUCCESS;
+                    }
+                    if (input[1] == 'w') {
+                        if (input[2] == 'q') {
+                            auto action = action::ActionFactory::createColonAction(document, cursorMover, ActionTypes::COLON_WQ);
+                            return action->execute();
+                        }
+                        return ReturnMessage::SUCCESS;
+                    }
+                    // determine if it is a change line command
+                    vector<int> newInput(input.begin() + 1, input.end() - 1);
+                    int size = newInput.size();
+                    int multiplier = extractMultiplier(newInput);
+                    if ((size_t)multiplier < static_cast<size_t>(pow(10, size - 1))) {
+                        return ReturnMessage::SUCCESS;
+                    }
+                    auto action = action::ActionFactory::createColonAction(document, cursorMover, ActionTypes::COLON_LINE, multiplier);
+                    return action->execute();
+                }
+            }
+            else { // > 4 of size for input
+                if (input[input.size() - 1] == Keys::KEY_ENTER_override) {
+                    vector<int> newInput(input.begin() + 1, input.end() - 1);
+                    int size = newInput.size();
+                    int lineNumber = extractMultiplier(newInput);
+                    if ((size_t)lineNumber <  10^(size - 1)) {
+                        return ReturnMessage::SUCCESS;
+                    }
+                    auto action = action::ActionFactory::createColonAction(document, cursorMover, ActionTypes::COLON_LINE, lineNumber);
+                    return action->execute();
+                }
+            }
+        }
+    
+
+
+        
 
 
 

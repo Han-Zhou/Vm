@@ -6,10 +6,10 @@
 
 
 void HolyVmEditor::run() {
-    cout << "running" << endl;
+    // cout << "running" << endl;
     window.init();
-    cout << "window initialized" << endl;
-    mvprintw(0, 0, "window initialized");
+    // cout << "window initialized" << endl;
+    // mvprintw(0, 0, "window initialized");
     window.run();
     while (true) {
         ReturnMessage returnStatus = controller->processInput();

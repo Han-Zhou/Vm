@@ -23,6 +23,9 @@ namespace model {
     class Document {
         vector<string> lines;
         vector<vector<string>> wrapped_lines;
+        vector<string> originalLines;
+
+        string fileName;
 
         // indicates line, subline, and index
         // exactly the same as the triple in Cursor
@@ -55,13 +58,21 @@ namespace model {
     friend class mode::InsertMode;
 
 
-        Document(const string &filename);
+
+        Document(const string &filename): fileName{filename} {
+            read_file(filename);
+        }
+
         Document(Document &&d) = delete;
         Document &operator=(const Document &d) = delete;
         Document &operator=(Document &&d) = delete;
 
+        ~Document() = default;
+
 
         const vector<string> &getLines() const;
+        const string &getFileName() const { return fileName; }
+        const vector<string> &getOriginalLines() const { return originalLines; }
 
         void wrap(size_t width);
         vector<vector<string>> &createWrappedLines(size_t width);

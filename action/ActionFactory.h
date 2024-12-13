@@ -12,6 +12,7 @@
 #include "./YankAndPaste/PasteAction.h"
 #include "./YankAndPaste/YankAction.h"
 #include "./Change/ChangeAction.h"
+#include "./Colon/ColonAction.h"
 
 
 
@@ -33,6 +34,7 @@ namespace action {
 
         static unique_ptr<Action> createChangeAction(model::Document &document, controller::CursorMover &cursorMover, int multiplier, ActionTypes actionType, model::YankRegister &yankRegister);
 
+        static unique_ptr<Action> createColonAction(model::Document &document, controller::CursorMover &cursorMover, ActionTypes actionType, int lineNumber = 0);
 
 
 

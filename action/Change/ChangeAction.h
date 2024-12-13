@@ -68,7 +68,7 @@ namespace action {
         ReturnMessage execute() override;
 
         ReturnMessage undo() override;
-    };;
+    };
 
 
 }

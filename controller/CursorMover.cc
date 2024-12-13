@@ -1,4 +1,5 @@
 #include "CursorMover.h"
+#include <algorithm>
 
 namespace controller {
     
@@ -81,6 +82,29 @@ namespace controller {
         }
 
 
+
+
+
+
+
+        void CursorMover::moveToStartOfFile() {
+            Triple t = {0, 0, 0};
+            document.updateTriple(t);
+            cursor.updateNewTriple(t);
+        }
+
+        void CursorMover::moveToEndOfFile() {
+            Triple t = {document.getLinesSize() - 1, 0, 0};
+            document.updateTriple(t);
+            cursor.updateNewTriple(t);
+        }
+
+        void CursorMover::moveToLine(int line) {
+            line = min(line, (int)document.getLinesSize() - 1);
+            Triple t = {line, 0, 0};
+            document.updateTriple(t);
+            cursor.updateNewTriple(t);
+        }
 
 
 

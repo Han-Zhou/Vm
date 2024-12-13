@@ -99,6 +99,17 @@ enum ActionTypes {
 
 
 
+    // colons
+    COLON_WQ,
+    COLON_Q,
+    COLON_W,
+    COLON_0,
+    COLON_$,
+    COLON_LINE,
+    COLON_Q_EXCLAMATION,
+
+
+
 
 
 };

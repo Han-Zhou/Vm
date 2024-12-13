@@ -44,6 +44,11 @@ namespace controller {
         void moveToPrevNonWhitespace(int multiplier = 1);
 
 
+        void moveToStartOfFile();
+        void moveToEndOfFile();
+        void moveToLine(int line);
+
+
 
 
 

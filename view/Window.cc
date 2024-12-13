@@ -15,7 +15,7 @@ namespace view {
         // attroff(COLOR_PAIR(1));
         delwin(win);
         endwin();
-        cout << "Window destroyed" << endl;
+        // cout << "Window destroyed" << endl;
         // delete cursor;
     }
 

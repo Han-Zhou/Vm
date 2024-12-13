@@ -15,6 +15,10 @@ struct Triple {
     Triple(Triple &&t) = default;
     Triple &operator=(const Triple &t) = default;
     Triple &operator=(Triple &&t) = default;
+
+    bool operator==(const Triple &other) const {
+        return (line == other.line) && (subLine == other.subLine) && (index == other.index);
+    }
 };
 
 

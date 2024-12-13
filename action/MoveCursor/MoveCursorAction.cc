@@ -22,7 +22,7 @@ namespace action {
                 cursorMover.moveToFrontOfLine();
                 break;
             case ActionTypes::MOVE_LINE_$:
-                cursorMover.moveToEndCharOfLine();
+                cursorMover.moveToEndOfLine();
                 break;
             case ActionTypes::MOVE_LINE_caret:
                 cursorMover.moveToFirstCharOfLine();

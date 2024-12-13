@@ -21,6 +21,68 @@ enum ActionTypes {
     MOVE_LINE_caret, // ^
 
 
+    // undo and redo
+    UNDO,
+    REDO,
+
+    // delete actions
+    DELETE_DJ,
+    DELETE_DK,
+    DELETE_DH,
+    DELETE_DL,
+
+    DELETE_DW,
+    DELETE_DBIGW,
+    DELETE_DB,
+    DELETE_DBIGB,
+    DELETE_D$,
+    DELETE_DCARET,
+    DELETE_D0,
+
+    DELETE_DD,
+
+
+    // change actions
+    CHANGE_CJ,
+    CHANGE_CK,
+    CHANGE_CH,
+    CHANGE_CL,
+
+    CHANGE_CW,
+    CHANGE_CBIGW,
+    CHANGE_CB,
+    CHANGE_CBIGB,
+    CHANGE_C$,
+    CHANGE_CCARET,
+    CHANGE_C0,
+
+    CHANGE_CC,
+ 
+    
+
+
+    
+    // paste actions
+    PASTE_P,
+    PASTE_BIGP,
+
+    // delete actions
+    YANK_YJ,
+    YANK_YK,
+    YANK_YH,
+    YANK_YL,
+
+    YANK_YW,
+    YANK_YBIGW,
+    YANK_YB,
+    YANK_YBIGB,
+    YANK_Y$,
+    YANK_YCARET,
+    YANK_Y0,
+
+    YANK_YY,
+
+
 
 
 

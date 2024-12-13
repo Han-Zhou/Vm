@@ -45,7 +45,7 @@ namespace controller {
             cursor.updateNewTriple(document.getTriple());
         }
 
-        void CursorMover::moveToEndCharOfLine() {
+        void CursorMover::moveToEndOfLine() {
             document.moveToEndOfLine();
             cursor.updateNewTriple(document.getTriple());
         }
@@ -99,6 +99,10 @@ namespace controller {
     
         void CursorMover::updateCursorTriple(const Triple &t) {
             cursor.updateNewTriple(t);
+        }
+
+        void CursorMover::updateCursor() {
+            cursor.updateNewTriple(document.getTriple());
         }
 
 

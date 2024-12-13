@@ -11,4 +11,27 @@ namespace action {
         return make_unique<ChangeModeAction>(document, cursorMover, actionType);
     }
 
+    unique_ptr<Action> ActionFactory::createDeleteAction(model::Document &document, controller::CursorMover &cursorMover, int multiplier, ActionTypes actionType, model::YankRegister &yankRegister) {
+        return make_unique<DeleteAction>(document, cursorMover, multiplier, actionType, yankRegister);
+    }
+
+    unique_ptr<Action> ActionFactory::createPasteAction(model::Document &document, controller::CursorMover &cursorMover, int multiplier, ActionTypes actionType, model::YankRegister &yankRegister) {
+        return make_unique<PasteAction>(document, cursorMover, multiplier, actionType, yankRegister);
+    }
+
+    unique_ptr<Action> ActionFactory::createYankAction(model::Document &document, controller::CursorMover &cursorMover, int multiplier, ActionTypes actionType, model::YankRegister &yankRegister) {
+        return make_unique<YankAction>(document, cursorMover, multiplier, actionType, yankRegister);
+    }
+
+    unique_ptr<Action> ActionFactory::createChangeAction(model::Document &document, controller::CursorMover &cursorMover, int multiplier, ActionTypes actionType, model::YankRegister &yankRegister) {
+        return make_unique<ChangeAction>(document, cursorMover, multiplier, actionType, yankRegister);
+    }
+
+
+
+
+
+
+    
+
 }

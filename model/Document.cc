@@ -31,6 +31,9 @@ namespace model {
         }
 
       
+        const vector<string> &Document::getLines() const {
+            return lines;
+        }
 
         void Document::wrap(size_t width) {
             wrapped_lines.clear();
@@ -78,6 +81,93 @@ namespace model {
         void Document::updateWrappedLines() {
             wrap(curWidth);
         }
+
+
+
+
+
+
+        // inserting and deleting characters
+        void Document::insertChar(int ch) {
+            int line = currentCursorChar.line;
+            int subLine = currentCursorChar.subLine;
+            int index = currentCursorChar.index;
+
+            // identify is ch belongs to printable characters
+            if ((ch >= 32) && (ch <= 126)) {
+
+                size_t numberOfWrappedLines = wrapped_lines[line].size();
+
+                if ((subLine == numberOfWrappedLines) || (index == wrapped_lines[line][subLine].size())) { // the cursor is at the end of the line. This indicates that if we insert char we would append to the end of the document.
+                    // we need to avoid inserting at the end of the line which contains a newline character
+                    lines[line].insert(lines[line].size() - 1, 1, ch);
+                }
+                else { // we just insert at the appropriate index
+                    int indexToInsert = subLine * wrapped_lines[line][0].size() + index;
+                    lines[line].insert(indexToInsert, 1, ch);
+                }
+                updateWrappedLines();
+            }
+            // if we have a newline character
+            else if (ch == KEY_ENTER_override){
+                int curIndex = subLine * wrapped_lines[line][0].size() + index;
+                string newLine = lines[line].substr(curIndex);
+                lines[line].erase(curIndex);
+                lines[line].push_back('\n');
+                lines.insert(lines.begin() + line + 1, newLine);
+                updateWrappedLines();
+            }
+        }
+
+
+        
+
+        void Document::deleteChar(const Triple &t) {
+            int line = t.line;
+            int index = t.subLine * wrapped_lines[line][0].size() + t.index;
+            if (index < lines[line].size()) {
+                lines[line].erase(lines[line].begin() + index);
+            }
+            updateWrappedLines();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // // MOVING LEFT AND RIGHT, UP AND DOWN
+        // void Document::moveUp(size_t windowCOLS) {
+        //     int &line = currentCursorChar.line;
+        //     int &subline = currentCursorChar.subLine;
+        //     int &index = currentCursorChar.index;
+
+
+
+        // }
+
+        
+
 
 
         void Document::addLineBelow() {
@@ -724,6 +814,197 @@ namespace model {
 
             save();
             return;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        string Document::deleteRange(const Triple &start, const Triple &end) {
+            string toBeReturned = "";
+
+            int startLine = start.line;
+            int startSubLine = start.subLine;
+            int sIndex = start.index;
+            int endLine = end.line;
+            int endSubLine = end.subLine;
+            int eIndex = end.index;
+
+            int startIndex = startSubLine * wrapped_lines[startLine][0].size() + sIndex;
+            int endIndex = endSubLine * wrapped_lines[endLine][0].size() + eIndex;
+
+            for (int i = startLine; i <= endLine; i++) {
+                if (i == startLine) {
+                    if (startSubLine == endSubLine) {
+                        toBeReturned += lines[i].substr(startIndex, endIndex - startIndex);
+                        lines[i].erase(lines[i].begin() + startIndex, lines[i].begin() + endIndex);
+                    }
+                    else {
+                        toBeReturned += lines[i].substr(startIndex);
+                        lines[i].erase(lines[i].begin() + startIndex, lines[i].end());
+                    }
+                }
+                else if (i == endLine) {
+                    toBeReturned += lines[i].substr(0, endIndex);
+                    lines[i].erase(lines[i].begin(), lines[i].begin() + endIndex);
+                }
+                else {
+                    toBeReturned += lines[i];
+                    lines.erase(lines.begin() + i);
+                }
+            }
+            updateWrappedLines();
+            return toBeReturned;
+        }
+
+
+
+        // deletes the current line
+        string Document::deleteCurrentLine() {
+            int currentLine = currentCursorChar.line;
+            string toBeReturned = lines[currentLine];
+            if (lines.size() == 1) {
+                lines[0] = "\n";
+                return "\n";
+            }
+
+            // if currentLine is at the last line of the document, then deleting it would move the cursor up
+            if (currentLine == lines.size() - 1) {
+                lines.erase(lines.begin() + currentLine);
+                currentCursorChar.line--;
+            }
+            else {
+                lines.erase(lines.begin() + currentLine);
+            }
+            currentCursorChar.subLine = 0;
+            currentCursorChar.index = 0;
+            updateWrappedLines();
+            
+            return toBeReturned;
+        }
+
+
+
+
+
+
+        void Document::insertTextAfter(vector<string> &text) {
+            int currentLine = currentCursorChar.line;
+            int currentSubLine = currentCursorChar.subLine;
+            int currentIndex = currentCursorChar.index;
+
+            int currentCharIndex = currentSubLine * curWidth + currentIndex;
+
+            for (string s : text) {
+                if (s[s.size() - 1] == '\n') {
+                    lines.insert(lines.begin() + currentLine + 1, s);
+                    currentLine++;
+                    currentCharIndex = 0;
+                }
+                else {
+                    if (lines[currentLine][currentCharIndex] == '\n') {
+                        lines[currentLine].insert(currentCharIndex, s);
+                    }
+                    else {
+                        lines[currentLine].insert(currentCharIndex + 1, s);
+                    }
+                    currentCharIndex += s.size();
+                }
+            }
+
+            // we update the cursor position
+            currentCursorChar.line = currentLine;
+            currentCursorChar.subLine = currentCharIndex / curWidth;
+            currentCursorChar.index = currentCharIndex % curWidth;
+            updateWrappedLines();
+        }
+
+
+
+
+
+
+
+        void Document::insertTextBefore(vector<string> &text) {
+            int currentLine = currentCursorChar.line;
+            int currentSubLine = currentCursorChar.subLine;
+            int currentIndex = currentCursorChar.index;
+
+            int currentCharIndex = currentSubLine * curWidth + currentIndex;
+
+            for (string s : text) {
+                if (s[s.size() - 1] == '\n') {
+                    lines.insert(lines.begin() + currentLine, s);
+                    currentCharIndex = 0;
+                }
+                else {
+                    lines[currentLine].insert(currentCharIndex, s);
+                    currentCharIndex += s.size();
+                }
+            }
+
+            // we update the cursor position
+            currentCursorChar.line = currentLine;
+            currentCursorChar.subLine = currentCharIndex / curWidth;
+            currentCursorChar.index = currentCharIndex % curWidth;
+            updateWrappedLines(); 
+        }
+
+
+
+
+
+
+
+
+
+
+        string Document::getTextInRange(const Triple &start, const Triple &end) {
+            string toBeReturned = "";
+
+            int startLine = start.line;
+            int startSubLine = start.subLine;
+            int sIndex = start.index;
+            int endLine = end.line;
+            int endSubLine = end.subLine;
+            int eIndex = end.index;
+
+            int startIndex = startSubLine * wrapped_lines[startLine][0].size() + sIndex;
+            int endIndex = endSubLine * wrapped_lines[endLine][0].size() + eIndex;
+
+            for (int i = startLine; i <= endLine; i++) {
+                if (i == startLine) {
+                    if (startSubLine == endSubLine) {
+                        toBeReturned += lines[i].substr(startIndex, endIndex - startIndex);
+                    }
+                    else {
+                        toBeReturned += lines[i].substr(startIndex);
+                    }
+                }
+                else if (i == endLine) {
+                    toBeReturned += lines[i].substr(0, endIndex);
+                }
+                else {
+                    toBeReturned += lines[i];
+                }
+            }
+            return toBeReturned;
+        }
+
+
+
+
+
+        string Document::getLineText(int line) {
+            return lines[line];
         }
 
 

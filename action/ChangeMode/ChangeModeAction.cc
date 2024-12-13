@@ -57,14 +57,14 @@ namespace action {
     ReturnMessage ChangeModeAction::changeToInsertBigI() {
         // we need to move to the first character of the current line
         document.moveToFirstCharOfLine();
-        cursorMover.updateCursorTriple(document.getTriple());
+        cursorMover.updateCursor();
         return ReturnMessage::INSERT;
     }
 
     ReturnMessage ChangeModeAction::changeToInsertBigA() {
         // we need to move to the last character of the current line and then move right (so that the cursor hovers)
         document.moveToEndOfLine();
-        cursorMover.updateCursorTriple(document.getTriple());
+        cursorMover.updateCursor();
         cursorMover.moveCursorRightInsertMode();
         return ReturnMessage::INSERT;
     }
@@ -73,7 +73,7 @@ namespace action {
         // we need to add a line above the current line
         // and move our cursor there
         document.addLineAbove();
-        cursorMover.updateCursorTriple(document.getTriple());
+        cursorMover.updateCursor();
         cursorMover.moveUp();
         return ReturnMessage::INSERT;
     }

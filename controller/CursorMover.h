@@ -35,7 +35,7 @@ namespace controller {
 
         void moveToFrontOfLine();
         void moveToFirstCharOfLine();
-        void moveToEndCharOfLine();
+        void moveToEndOfLine();
 
 
         void moveToNextWord(int multiplier = 1);
@@ -48,6 +48,9 @@ namespace controller {
 
 
         void updateCursorTriple(const Triple &t);
+
+        // once a change to the document triple has been made, we need to update the cursor
+        void updateCursor();
 
     };
 }

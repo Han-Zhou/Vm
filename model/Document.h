@@ -17,12 +17,14 @@ namespace mode {
     class InsertMode;
 }
 
+
 namespace model {
 
     class Document {
         vector<string> lines;
         vector<vector<string>> wrapped_lines;
 
+        // indicates line, subline, and index
         // exactly the same as the triple in Cursor
         Triple currentCursorChar = {0, 0, 0};
 
@@ -38,23 +40,28 @@ namespace model {
         bool isWhitespace(int ch);
         bool isPunctuation(int ch);
         bool isAlphabet(int ch);
+        
         bool atEndOfDocument(int &currentLine, int &currentCharIndex);
         void moveForwardOneChar(int &currentLine, int &currentCharIndex);
         bool atBeginOfDocument(int &currentLine, int &currentCharIndex);
         void moveBackOneChar(int &currentLine, int &currentCharIndex);
 
 
+        
+
+
     public:
 
     friend class mode::InsertMode;
 
-        Document(const string &filename);
 
-        
+        Document(const string &filename);
         Document(Document &&d) = delete;
         Document &operator=(const Document &d) = delete;
         Document &operator=(Document &&d) = delete;
 
+
+        const vector<string> &getLines() const;
 
         void wrap(size_t width);
         vector<vector<string>> &createWrappedLines(size_t width);
@@ -68,12 +75,19 @@ namespace model {
 
 
         void insertChar(int ch);
-        void deleteChar();
+        // void deleteChar();
+        void deleteChar(const Triple &t);
 
 
-        // changes lines according to wrapped lines
+        // changes wrapped lines according to lines
         void updateWrappedLines();
 
+        // // moving up, down, left, right, right in insert
+        // void moveUp(size_t windowCOLS);
+        // void moveDown(size_t windowLINES, size_t windowCOLS);
+        // void moveLeft(size_t windowCOLS);
+        // void moveRight(size_t windowCOLS);
+        // void moveRightInsertMode(size_t windowCOLS);
 
         // add a line below the current line
         void addLineBelow();
@@ -87,6 +101,20 @@ namespace model {
         void moveToNextNonWhitespace();
         void moveToPrevWord();
         void moveToPrevNonWhitespace();
+
+
+        // these functions return the deleted text for yanking and pasting
+        string deleteCurrentLine();
+        // deletes every character in [start, finish)
+        string deleteRange(const Triple &start, const Triple &end);
+
+        string getTextInRange(const Triple &start, const Triple &end);
+        string getLineText(int line);
+
+        // insert text after the current cursor position
+        void insertTextAfter(vector<string> &text);
+        // insert text before the current cursor position
+        void insertTextBefore(vector<string> &text);
 
 
 

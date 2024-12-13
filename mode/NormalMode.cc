@@ -7,11 +7,6 @@ namespace mode {
 
     ReturnMessage NormalMode::processInput(vector<int> input) {
 
-        // ofstream log("normal.log", ios::app);
-        // log << "input: ";
-        // for (int i = 0; i < input.size(); i++) {
-        //     log << input[i] << " ";
-        // }
         
         if (input.size() == 0) {
             return ReturnMessage::RUNNING;
@@ -38,18 +33,22 @@ namespace mode {
 
         if (input.size() == 1) {
             switch (input[0]) {
+            case Keys::KEY_LEFT_ARROW: 
             case 'h': { // moves the cursor left
                 auto action = action::ActionFactory::createMoveCursorAction(document, cursorMover, multiplier, ActionTypes::MOVE_LEFT);
                 return action->execute();
             }
+            case Keys::KEY_DOWN_ARROW:
             case 'j': { // moves the cursor down
                 auto action = action::ActionFactory::createMoveCursorAction(document, cursorMover, multiplier, ActionTypes::MOVE_DOWN);
                 return action->execute();
             }
+            case Keys::KEY_UP_ARROW:
             case 'k': { // moves the cursor up
                 auto action = action::ActionFactory::createMoveCursorAction(document, cursorMover, multiplier, ActionTypes::MOVE_UP);
                 return action->execute();
             }
+            case Keys::KEY_RIGHT_ARROW:
             case 'l': { // moves the cursor to the right
                 auto action = action::ActionFactory::createMoveCursorAction(document, cursorMover, multiplier, ActionTypes::MOVE_RIGHT);
                 return action->execute();
@@ -104,6 +103,29 @@ namespace mode {
                 auto action = action::ActionFactory::createMoveCursorAction(document, cursorMover, multiplier, ActionTypes::MOVE_WORD_BIG_B);
                 return action->execute();
             }
+
+
+            case 'd': {
+                return ReturnMessage::RUNNING;
+            }
+            case 'c': {
+                return ReturnMessage::RUNNING;
+            }
+            case 'y': {
+                return ReturnMessage::RUNNING;
+            }
+
+
+            case 'p': {
+                auto action = action::ActionFactory::createPasteAction(document, cursorMover, multiplier, ActionTypes::PASTE_P, yankRegister);
+                return action->execute();
+            }
+            case 'P': {
+                auto action = action::ActionFactory::createPasteAction(document, cursorMover, multiplier, ActionTypes::PASTE_BIGP, yankRegister);
+                return action->execute();
+            }
+
+
             default:
                 break;
             }
@@ -113,8 +135,195 @@ namespace mode {
 
 
 
+        // inputsize = 2
+        if (input.size() == 2) {
 
-        return ReturnMessage::RUNNING;
+            switch (input[0]) {
+            case 'd': {
+                switch(input[1]) {
+                    case 'h': 
+                    case Keys::KEY_LEFT_ARROW: {
+                        auto action = action::ActionFactory::createDeleteAction(document, cursorMover, multiplier, ActionTypes::DELETE_DH, yankRegister);
+                        return action->execute();
+                    }
+                    case 'j': 
+                    case Keys::KEY_DOWN_ARROW: {
+                        auto action = action::ActionFactory::createDeleteAction(document, cursorMover, multiplier, ActionTypes::DELETE_DJ, yankRegister);
+                        return action->execute();
+                    }
+                    case 'k': 
+                    case Keys::KEY_UP_ARROW: {
+                        auto action = action::ActionFactory::createDeleteAction(document, cursorMover, multiplier, ActionTypes::DELETE_DK, yankRegister);
+                        return action->execute();
+                    }
+                    case 'l': 
+                    case Keys::KEY_RIGHT_ARROW: {
+                        auto action = action::ActionFactory::createDeleteAction(document, cursorMover, multiplier, ActionTypes::DELETE_DL, yankRegister);
+                        return action->execute();
+                    }
+                    case 'd': {
+                        auto action = action::ActionFactory::createDeleteAction(document, cursorMover, multiplier, ActionTypes::DELETE_DD, yankRegister);
+                        return action->execute();
+                    }
+                    case 'w': {
+                        auto action = action::ActionFactory::createDeleteAction(document, cursorMover, multiplier, ActionTypes::DELETE_DW, yankRegister);
+                        return action->execute();
+                    }
+                    case 'W': {
+                        auto action = action::ActionFactory::createDeleteAction(document, cursorMover, multiplier, ActionTypes::DELETE_DBIGW, yankRegister);
+                        return action->execute();
+                    }
+                    case 'b': {
+                        auto action = action::ActionFactory::createDeleteAction(document, cursorMover, multiplier, ActionTypes::DELETE_DB, yankRegister);
+                        return action->execute();
+                    }
+                    case 'B': {
+                        auto action = action::ActionFactory::createDeleteAction(document, cursorMover, multiplier, ActionTypes::DELETE_DBIGB, yankRegister);
+                        return action->execute();
+                    }
+                    case '$': {
+                        auto action = action::ActionFactory::createDeleteAction(document, cursorMover, multiplier, ActionTypes::DELETE_D$, yankRegister);
+                        return action->execute();
+                    }
+                    case '^': {
+                        auto action = action::ActionFactory::createDeleteAction(document, cursorMover, multiplier, ActionTypes::DELETE_DCARET, yankRegister);
+                        return action->execute();
+                    }
+                    case '0': {
+                        auto action = action::ActionFactory::createDeleteAction(document, cursorMover, multiplier, ActionTypes::DELETE_D0, yankRegister);
+                        return action->execute();
+                    }
+                }
+            }
+
+            
+
+           case 'c': {
+                switch(input[1]) {
+                    case 'h': 
+                    case Keys::KEY_LEFT_ARROW: {
+                        auto action = action::ActionFactory::createChangeAction(document, cursorMover, multiplier, ActionTypes::CHANGE_CH, yankRegister);
+                        return action->execute();
+                    }
+                    case 'j': 
+                    case Keys::KEY_DOWN_ARROW: {
+                        auto action = action::ActionFactory::createChangeAction(document, cursorMover, multiplier, ActionTypes::CHANGE_CJ, yankRegister);
+                        return action->execute();
+                    }
+                    case 'k': 
+                    case Keys::KEY_UP_ARROW: {
+                        auto action = action::ActionFactory::createChangeAction(document, cursorMover, multiplier, ActionTypes::CHANGE_CK, yankRegister);
+                        return action->execute();
+                    }
+                    case 'l': 
+                    case Keys::KEY_RIGHT_ARROW: {
+                        auto action = action::ActionFactory::createChangeAction(document, cursorMover, multiplier, ActionTypes::CHANGE_CL, yankRegister);
+                        return action->execute();
+                    }
+                    case 'c': {
+                        auto action = action::ActionFactory::createChangeAction(document, cursorMover, multiplier, ActionTypes::CHANGE_CC, yankRegister);
+                        return action->execute();
+                    }
+                    case 'w': {
+                        auto action = action::ActionFactory::createChangeAction(document, cursorMover, multiplier, ActionTypes::CHANGE_CW, yankRegister);
+                        return action->execute();
+                    }
+                    case 'W': {
+                        auto action = action::ActionFactory::createChangeAction(document, cursorMover, multiplier, ActionTypes::CHANGE_CBIGW, yankRegister);
+                        return action->execute();
+                    }
+                    case 'b': {
+                        auto action = action::ActionFactory::createChangeAction(document, cursorMover, multiplier, ActionTypes::CHANGE_CB, yankRegister);
+                        return action->execute();
+                    }
+                    case 'B': {
+                        auto action = action::ActionFactory::createChangeAction(document, cursorMover, multiplier, ActionTypes::CHANGE_CBIGB, yankRegister);
+                        return action->execute();
+                    }
+                    case '$': {
+                        auto action = action::ActionFactory::createChangeAction(document, cursorMover, multiplier, ActionTypes::CHANGE_C$, yankRegister);
+                        return action->execute();
+                    }
+                    case '^': {
+                        auto action = action::ActionFactory::createChangeAction(document, cursorMover, multiplier, ActionTypes::CHANGE_CCARET, yankRegister);
+                        return action->execute();
+                    }
+                    case '0': {
+                        auto action = action::ActionFactory::createChangeAction(document, cursorMover, multiplier, ActionTypes::CHANGE_C0, yankRegister);
+                        return action->execute();
+                    }
+                }
+            } 
+
+            case 'y': {
+                switch(input[1]) {
+                    case 'h': 
+                    case Keys::KEY_LEFT_ARROW: {
+                        auto action = action::ActionFactory::createYankAction(document, cursorMover, multiplier, ActionTypes::YANK_YH, yankRegister);
+                        return action->execute();
+                    }
+                    case 'j': 
+                    case Keys::KEY_DOWN_ARROW: {
+                        auto action = action::ActionFactory::createYankAction(document, cursorMover, multiplier, ActionTypes::YANK_YJ, yankRegister);
+                        return action->execute();
+                    }
+                    case 'k': 
+                    case Keys::KEY_UP_ARROW: {
+                        auto action = action::ActionFactory::createYankAction(document, cursorMover, multiplier, ActionTypes::YANK_YK, yankRegister);
+                        return action->execute();
+                    }
+                    case 'l': 
+                    case Keys::KEY_RIGHT_ARROW: {
+                        auto action = action::ActionFactory::createYankAction(document, cursorMover, multiplier, ActionTypes::YANK_YL, yankRegister);
+                        return action->execute();
+                    }
+                    case 'y': {
+                        auto action = action::ActionFactory::createYankAction(document, cursorMover, multiplier, ActionTypes::YANK_YY, yankRegister);
+                        return action->execute();
+                    }
+                    case 'w': {
+                        auto action = action::ActionFactory::createYankAction(document, cursorMover, multiplier, ActionTypes::YANK_YW, yankRegister);
+                        return action->execute();
+                    }
+                    case 'W': {
+                        auto action = action::ActionFactory::createYankAction(document, cursorMover, multiplier, ActionTypes::YANK_YBIGW, yankRegister);
+                        return action->execute();
+                    }
+                    case 'b': {
+                        auto action = action::ActionFactory::createYankAction(document, cursorMover, multiplier, ActionTypes::YANK_YB, yankRegister);
+                        return action->execute();
+                    }
+                    case 'B': {
+                        auto action = action::ActionFactory::createYankAction(document, cursorMover, multiplier, ActionTypes::YANK_YBIGB, yankRegister);
+                        return action->execute();
+                    }
+                    case '$': {
+                        auto action = action::ActionFactory::createYankAction(document, cursorMover, multiplier, ActionTypes::YANK_Y$, yankRegister);
+                        return action->execute();
+                    }
+                    case '^': {
+                        auto action = action::ActionFactory::createYankAction(document, cursorMover, multiplier, ActionTypes::YANK_YCARET, yankRegister);
+                        return action->execute();
+                    }
+                    case '0': {
+                        auto action = action::ActionFactory::createYankAction(document, cursorMover, multiplier, ActionTypes::YANK_Y0, yankRegister);
+                        return action->execute();
+                    }
+                }  
+
+            return ReturnMessage::SUCCESS;
+            }
+
+
+
+            }
+        }
+
+
+
+
+
+        return ReturnMessage::SUCCESS;
     }
 
 

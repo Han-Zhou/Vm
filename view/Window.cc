@@ -84,8 +84,6 @@ namespace view {
         if (resized) {
             resized = false;
             cursor.adjustCursor(LINES - 1, COLS);
-            // log << "After adjustCursor: " << cursor.getPosn().y << " " << cursor.getPosn().x << endl;
-            // log  << cursor.getCurrentChar().line << " " << cursor.getCurrentChar().subLine << " " << cursor.getCurrentChar().index << endl;
         }
         clear();
         display_file(wrappedContent);
@@ -105,20 +103,16 @@ namespace view {
         // int row = 0;
         scrollOffset = cursor.getScrollOffset();
 
-        // Flatten the wrapped lines so we can easily print from scrollOffset
+        // flatten the wrapped lines so we can easily print from scrollOffset
         vector<string> flatLines;
         flatLines.reserve(document.getWrappedLinesSize());
-
         for (size_t i = 0; i < wrappedLines.size(); i++) {
             for (size_t j = 0; j < wrappedLines[i].size(); j++) {
                 flatLines.push_back(wrappedLines[i][j]);
             }
         }
 
-        // ofstream log("log2", ios_base::app);
-        // log << "displaying file" << endl;
         int end = std::min(scrollOffset + LINES - 1, document.getWrappedLinesSize());
-        
         int currentLine = scrollOffset;
 
         for (int i = scrollOffset; i < end; ++i) {

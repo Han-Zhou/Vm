@@ -6,6 +6,7 @@
 
 #include "Mode.h"
 #include "../model/Document.h"
+#include "../model/YankRegister.h"
 #include "../view/Window.h"
 #include "../controller/CursorMover.h"
 #include "../structs/ReturnMessage.h"
@@ -24,6 +25,7 @@ namespace mode {
 
         model::Document &document;
         controller::CursorMover cursorMover;
+        model::YankRegister &yankRegister;
 
         bool isDigit(int ch);
         int extractDigit(int ch);
@@ -31,8 +33,9 @@ namespace mode {
         int extractMultiplier(vector<int> &input);
 
     public:
-        NormalMode(model::Document &document, controller::CursorMover cm): document{document}, cursorMover{cm} {}
-         ~NormalMode() = default;
+        NormalMode(model::Document &document, controller::CursorMover cm): document{document}, cursorMover{cm}, yankRegister{model::YankRegister::getInstance()} { }
+
+        ~NormalMode() = default;
 
 
 

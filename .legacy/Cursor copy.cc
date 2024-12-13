@@ -62,7 +62,6 @@ namespace view {
         for (int i = 0; i < currentChar.line; i++) {
             wrapped_line_index += document.fetchWrappedLines()[i].size();
         }
-        
         // if the line the cursor is pointing to is not in the view, we need to adjust the scrollOffset
         if (wrapped_line_index < scrollOffset) {
             scrollOffset = wrapped_line_index;

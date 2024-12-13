@@ -46,6 +46,7 @@ namespace controller {
         else if (returnMessage == ReturnMessage::INSERT) {
             currentMode = insert_mode.get();
             window.changeMode("insert");
+            inputBuffer.clear();
         }
         
         return returnMessage;        
